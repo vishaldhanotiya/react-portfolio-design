@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FifthSection.css";
+import "./FifthSection.scss";
 const gridImage = [
 	{
 		text: "Noah Lucas",
@@ -40,18 +40,9 @@ export default function FifthSection() {
 					className="left-arrow"
 				/>
 				<div className="image-container">
-					<div
-						style={{
-							backgroundImage: `url(${gridImage[activeIndex].value})`,
-							backgroundRepeat: "no-repeat",
-							backgroundPosition: "center",
-							backgroundSize: "cover",
-							borderRadius: 60,
-							marginLeft: "auto",
-							marginRight: "auto",
-							width: 120,
-							height: 120,
-						}}
+					<img
+						className="reviewer-image-item"
+						src={gridImage[activeIndex].value}
 					/>
 				</div>
 

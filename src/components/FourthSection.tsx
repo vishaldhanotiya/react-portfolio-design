@@ -1,5 +1,5 @@
 import React from "react";
-import "./FourthSection.css";
+import "./FourthSection.scss";
 const workType = [
 	{
 		title: "All",
@@ -82,22 +82,7 @@ export default function FourthSection() {
 
 			<div className="image-list">
 				{gridImage.map((item, index) => {
-					return (
-						<div
-							style={{
-								height: 280,
-								width: 230,
-								marginBottom: 20,
-								fontWeight: "500",
-								fontSize: "0.9em",
-								borderRadius: 5,
-								backgroundRepeat: "no-repeat",
-								backgroundPosition: "center",
-								backgroundSize: "cover",
-								backgroundImage: `url(${item.value})`,
-							}}
-						></div>
-					);
+					return <img className="grid-image-item" src={item.value} />;
 				})}
 			</div>
 			<div className="button-container">

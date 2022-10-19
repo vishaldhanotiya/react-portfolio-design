@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/FirstSection.css";
+import "../components/FirstSection.scss";
 const FirstSection = (props) => {
 	return (
 		<div id="firstSection">

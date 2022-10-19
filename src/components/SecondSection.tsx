@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/SecondSection.css";
+import "../components/SecondSection.scss";
 export default function SecondSection() {
 	return (
 		<div id="secondSection">
