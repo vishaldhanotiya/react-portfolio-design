@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./FourthSection.css";
 const workType = [
 	{
 		title: "All",
@@ -53,24 +53,8 @@ const gridImage = [
 export default function FourthSection() {
 	return (
 		<div id="fourthSection">
-			<p
-				style={{
-					color: "gray",
-					paddingTop: 60,
-					fontWeight: "bold",
-					fontSize: "2.2em",
-				}}
-			>
-				THIS IS MY WORK
-			</p>
-			<ol
-				style={{
-					justifyContent: "center",
-					display: "flex",
-					overflow: "auto",
-					listStyle: "none",
-				}}
-			>
+			<p className="fourth-title">THIS IS MY WORK</p>
+			<ol className="option-list">
 				{workType.map((item, index) => {
 					return (
 						<li
@@ -96,14 +80,7 @@ export default function FourthSection() {
 				})}
 			</ol>
 
-			<div
-				style={{
-					justifyContent: "center",
-					display: "grid",
-					gridTemplateColumns: "260px 260px 260px 260px",
-					listStyle: "none",
-				}}
-			>
+			<div className="image-list">
 				{gridImage.map((item, index) => {
 					return (
 						<div
@@ -123,30 +100,8 @@ export default function FourthSection() {
 					);
 				})}
 			</div>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "center",
-					alignSelf: "center",
-				}}
-			>
-				<div
-					style={{
-						color: "#df5757",
-						fontWeight: "500",
-						fontSize: "0.9em",
-						margin: 50,
-						backgroundColor: "white",
-						paddingInline: 15,
-						paddingBlock: 8,
-						borderRadius: 5,
-						borderWidth: "2px",
-						borderColor: "#df5757",
-						borderStyle: "solid",
-					}}
-				>
-					{"MORE WORK"}
-				</div>
+			<div className="button-container">
+				<div className="button">{"MORE WORK"}</div>
 			</div>
 		</div>
 	);

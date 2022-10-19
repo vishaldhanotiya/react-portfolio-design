@@ -1,184 +1,44 @@
 import React from "react";
-import location from "../res/pin.png";
-import email from "../res/email.png";
-import call from "../res/call.png";
+import "./SeventhSection.css";
 export default function SeventhSection() {
 	return (
-		<div id="seventhSection" style={{ backgroundColor: "#579e6b" }}>
-			<p
-				style={{
-					color: "white",
-					paddingTop: 80,
-					fontWeight: "bold",
-					fontSize: "2em",
-				}}
-			>
-				LET'S GET IN TOUCH
-			</p>
+		<div id="seventhSection" className="seventh-background">
+			<p className="seventh-title">LET'S GET IN TOUCH</p>
 
-			<p
-				style={{
-					color: "white",
-					fontSize: "1em",
-				}}
-			>
+			<p className="seventh-subtitle">
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. <br />
 				Lorem Ipsum standard dummy text ever since the 1500s,
 				<br /> when an unknown printer took a galley specimen book.
 			</p>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "center",
-				}}
-			>
-				<div style={{ margin: 20 }}>
-					<div
-						style={{
-							marginLeft: "auto",
-							marginRight: "auto",
-							backgroundRepeat: "no-repeat",
-							backgroundPosition: "center",
-							backgroundSize: "contain",
-							backgroundImage: `url(${location})`,
-							width: 40,
-							height: 40,
-						}}
-					/>
+			<div className="touch-container">
+				<div className="location-margin">
+					<div className="pin-image" />
 
-					<p
-						style={{
-							fontSize: "0.8em",
-							color: "white",
-						}}
-					>
+					<p className="address-text">
 						Big Street AVE, 254 Los Angeles <br />
 						California
 					</p>
 				</div>
-				<div style={{ margin: 20 }}>
-					<div
-						style={{
-							backgroundRepeat: "no-repeat",
-							backgroundPosition: "center",
-							backgroundSize: "cover",
-							backgroundImage: `url(${email})`,
-							width: 40,
-							height: 40,
-							marginLeft: "auto",
-							marginRight: "auto",
-						}}
-					/>
+				<div className="location-margin">
+					<div className="email-image" />
 
-					<p
-						style={{
-							fontSize: "0.8em",
-							color: "white",
-						}}
-					>
-						contact@planus.com
-					</p>
+					<p className="address-text">contact@planus.com</p>
 				</div>
-				<div style={{ margin: 20 }}>
-					<div
-						style={{
-							backgroundRepeat: "no-repeat",
-							backgroundPosition: "center",
-							backgroundSize: "contain",
-							backgroundImage: `url(${call})`,
-							width: 40,
-							height: 40,
-							marginLeft: "auto",
-							marginRight: "auto",
-						}}
-					/>
+				<div className="location-margin">
+					<div className="call-image" />
 
-					<p
-						style={{
-							fontSize: "0.8em",
-							color: "white",
-						}}
-					>
-						(544)-746-28902
-					</p>
+					<p className="address-text">(544)-746-28902</p>
 				</div>
 			</div>
 			<div style={{ display: "block", justifyContent: "center" }}>
-				<input
-					placeholder="Name"
-					style={{
-						width: 450,
-						height: 30,
-						paddingInline: 10,
-						borderLeftWidth: 0,
-						borderRightWidth: 0,
-						borderTopWidth: 0,
-						marginBottom: 10,
-
-						borderBottomWidth: 2,
-						backgroundColor: "#529563",
-						borderBottomColor: "white",
-					}}
-				/>
+				<input placeholder="Name" className="name-input" />
 				<br />
-				<input
-					placeholder="Email"
-					style={{
-						color: "white",
-
-						width: 450,
-						height: 30,
-						paddingInline: 10,
-						borderLeftWidth: 0,
-						borderRightWidth: 0,
-						borderTopWidth: 0,
-						marginBottom: 10,
-						borderBottomWidth: 2,
-						backgroundColor: "#529563",
-						borderBottomColor: "white",
-					}}
-				/>
+				<input placeholder="Email" className="email-input" />
 				<br />
-				<input
-					style={{
-						width: 450,
-						paddingInline: 10,
-						height: 90,
-						borderLeftWidth: 0,
-						borderRightWidth: 0,
-						borderTopWidth: 0,
-						marginBottom: 5,
-						borderBottomWidth: 2,
-						backgroundColor: "#529563",
-						borderBottomColor: "white",
-					}}
-				/>
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignSelf: "center",
-					}}
-				>
-					<div
-						style={{
-							color: "white",
-							fontWeight: "500",
-							fontSize: "0.9em",
-							margin: 20,
-							marginBottom: 50,
-							backgroundColor: "#529563",
-							paddingInline: 15,
-							paddingBlock: 8,
-							borderRadius: 5,
-							borderWidth: "2px",
-							borderColor: "white",
-							borderStyle: "solid",
-						}}
-					>
-						{"Read More Blog"}
-					</div>
+				<input className="message-input" />
+				<div className="submit-container">
+					<div className="submit-button">{"SUBMIT"}</div>
 				</div>
 			</div>
 		</div>

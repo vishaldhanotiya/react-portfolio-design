@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import leftArrow from "../res/left-arrow.png";
-import rightArrow from "../res/right-arrow.png";
+import "./FifthSection.css";
 const gridImage = [
 	{
 		text: "Noah Lucas",
@@ -29,50 +28,18 @@ export default function FifthSection() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	return (
 		<div id="fifthSection" style={{ backgroundColor: "#ebebeb" }}>
-			<p
-				style={{
-					color: "gray",
-					paddingTop: 80,
-					fontWeight: "bold",
-					fontSize: "2em",
-				}}
-			>
-				WHAT THEY SAY ABOUT ME
-			</p>
+			<p className="fifth-title">WHAT THEY SAY ABOUT ME</p>
 
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "center",
-					alignItems: "center",
-				}}
-			>
+			<div className="review-container">
 				<div
 					onClick={() => {
 						if (activeIndex) {
 							setActiveIndex(activeIndex - 1);
 						}
 					}}
-					style={{
-						backgroundRepeat: "no-repeat",
-						backgroundPosition: "center",
-						backgroundSize: "contain",
-						backgroundImage: `url(${leftArrow})`,
-						borderRadius: 20,
-						width: 40,
-						marginRight: 30,
-						height: 40,
-					}}
+					className="left-arrow"
 				/>
-				<div
-					style={{
-						marginBlock: 10,
-
-						display: "block",
-						justifyContent: "center",
-						alignItems: "center",
-					}}
-				>
+				<div className="image-container">
 					<div
 						style={{
 							backgroundImage: `url(${gridImage[activeIndex].value})`,
@@ -94,58 +61,19 @@ export default function FifthSection() {
 							setActiveIndex(activeIndex + 1);
 						}
 					}}
-					style={{
-						backgroundRepeat: "no-repeat",
-						backgroundPosition: "center",
-						backgroundSize: "contain",
-						backgroundImage: `url(${rightArrow})`,
-						borderRadius: 20,
-						marginLeft: 30,
-
-						width: 40,
-						height: 40,
-					}}
+					className="right-arrow"
 				/>
 			</div>
-			<div
-				style={{
-					justifyContent: "center",
-					alignItems: "center",
-				}}
-			>
-				<p
-					style={{
-						color: "gray",
-						fontWeight: "bold",
-						fontSize: "1.2em",
-					}}
-				>
-					{gridImage[activeIndex].text}
-				</p>
-				<p
-					style={{
-						fontSize: "0.8em",
-						color: "gray",
-					}}
-				>
+			<div className="review-text-container">
+				<p className="reviewer-name">{gridImage[activeIndex].text}</p>
+				<p className="reviewer-review">
 					{gridImage[activeIndex].review}
 				</p>
 			</div>
-			<div
-				style={{
-					justifyContent: "center",
-					display: "flex",
-					marginInline: 20,
-				}}
-			>
+			<div className="pagination-container">
 				{gridImage.map((item, index) => {
 					return (
-						<div
-							style={{
-								display: "flex",
-								justifyContent: "center",
-							}}
-						>
+						<div className="pagination">
 							<div
 								style={{
 									height: 10,

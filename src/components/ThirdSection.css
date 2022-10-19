@@ -1,0 +1,72 @@
+.main-background {
+	background-color: #df5757;
+}
+
+.third-title-text {
+	color: white;
+	padding-top: 8vh;
+	font-weight: bold;
+	font-size: 2.2rem;
+}
+.subtitle-text {
+	color: white;
+	font-size: 1rem;
+}
+.second-container {
+	display: flex;
+	padding-top: 2vw;
+	padding-bottom: 4vw;
+	justify-content: center;
+}
+.first-section {
+	margin: 2.5vw;
+}
+.first-image {
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/imac.png);
+	width: 4vw;
+	height: 4vw;
+}
+.second-image {
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/instagram-logo.png);
+	width: 4vw;
+	height: 4vw;
+}
+.third-image {
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/tools-and-utensils.png);
+	width: 4vw;
+	height: 4vw;
+}
+.fourth-image {
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/puzzle.png);
+	width: 4vw;
+	height: 4vw;
+}
+.web-title {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: white;
+}
+.web-subtitle {
+	font-size: 0.8rem;
+	color: white;
+}
