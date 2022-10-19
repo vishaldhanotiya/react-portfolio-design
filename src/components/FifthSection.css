@@ -1,0 +1,56 @@
+.fifth-title {
+	color: gray;
+	padding-top: 6vw;
+	font-weight: bold;
+	font-size: 2.2rem;
+}
+.pagination-container {
+	justify-content: center;
+	display: flex;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+.review-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.left-arrow {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/left-arrow.png);
+	width: 2vw;
+	height: 2vw;
+	margin-right: 3vw;
+}
+.right-arrow {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url(../res/right-arrow.png);
+	margin-left: 3vw;
+	width: 2vw;
+	height: 2vw;
+}
+.review-text-container {
+	justify-content: center;
+	align-items: center;
+}
+.reviewer-name {
+	color: gray;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.reviewer-review {
+	font-size: 1rem;
+	color: gray;
+}
+.image-container {
+	margin-block: 1vw;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}

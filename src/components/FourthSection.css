@@ -1,0 +1,48 @@
+.fourth-title {
+	color: gray;
+	padding-top: 5vw;
+	font-weight: bold;
+	font-size: 2.2rem;
+}
+
+.option-list {
+	justify-content: center;
+	display: flex;
+	overflow: auto;
+	list-style: none;
+}
+.image-list {
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 260px 260px 260px 260px;
+	list-style: none;
+}
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+.button {
+	color: #df5757;
+	font-weight: 500;
+	font-size: 0.9rem;
+	margin: 2vw;
+	background-color: white;
+	padding-inline: 1vw;
+	padding-block: 0.8vw;
+	border-radius: 0.5vw;
+	border-width: 2px;
+	border-color: #df5757;
+	border-style: solid;
+}
+.grid-image-item {
+	height: 280;
+	width: 230;
+	margin-bottom: 20;
+	font-weight: 500;
+	font-size: 0.9em;
+	border-radius: 5;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
