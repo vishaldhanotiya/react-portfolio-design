@@ -1,5 +1,5 @@
 import React from "react";
-import "./SeventhSection.css";
+import "./SeventhSection.scss";
 export default function SeventhSection() {
 	return (
 		<div id="seventhSection" className="seventh-background">

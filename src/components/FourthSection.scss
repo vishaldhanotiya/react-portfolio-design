@@ -1,6 +1,12 @@
+@import "../res/theme/variable";
+:root {
+	--white: #{$white};
+	--gray: #{$gray};
+	--blood-red: #{$blood-red};
+}
 .fourth-title {
-	color: gray;
-	padding-top: 5vw;
+	color: var(--gray);
+	padding-top: 5rem;
 	font-weight: bold;
 	font-size: 2.2rem;
 }
@@ -14,7 +20,7 @@
 .image-list {
 	justify-content: center;
 	display: grid;
-	grid-template-columns: 260px 260px 260px 260px;
+	grid-template-columns: 16rem 16rem 16rem 16rem;
 	list-style: none;
 }
 .button-container {
@@ -23,25 +29,25 @@
 	align-self: center;
 }
 .button {
-	color: #df5757;
+	color: var(--blood-red);
 	font-weight: 500;
 	font-size: 0.9rem;
-	margin: 2vw;
-	background-color: white;
-	padding-inline: 1vw;
-	padding-block: 0.8vw;
-	border-radius: 0.5vw;
+	margin: 2rem;
+	background-color: var(--white);
+	padding-inline: 1rem;
+	padding-block: 0.8rem;
+	border-radius: 0.5rem;
 	border-width: 2px;
-	border-color: #df5757;
+	border-color: var(--blood-red);
 	border-style: solid;
 }
 .grid-image-item {
-	height: 280;
-	width: 230;
-	margin-bottom: 20;
+	height: 18rem;
+	width: 15rem;
+	margin-bottom: 2rem;
 	font-weight: 500;
-	font-size: 0.9em;
-	border-radius: 5;
+	font-size: 0.9rem;
+	border-radius: 0.5rem;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

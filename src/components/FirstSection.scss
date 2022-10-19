@@ -1,7 +1,11 @@
+@import "../res/theme/variable";
+:root {
+	--white: #{$white};
+}
 .menu-text {
-	padding: 0px 5px 0px 5px;
+	padding: 0px 1rem 0px 1rem;
 	text-align: center;
-	color: white;
+	color: var(--white);
 	font-size: 0.8rem;
 }
 .background-image {
@@ -11,17 +15,17 @@
 	background-attachment: fixed;
 	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
 		url("https://s1.1zoom.me/b5050/159/Coffee_Laptops_Hands_Table_533543_3840x2400.jpg");
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 56rem;
 }
 .header-container {
-	padding-block: 1vw;
-	padding-inline: 1vw;
+	padding-block: 1rem;
+	padding-inline: 1rem;
 	display: flex;
 }
 .header {
 	flex: 1;
-	margin-inline: 4vw;
+	margin-inline: 4rem;
 	align-items: center;
 	display: flex;
 	justify-content: flex-end;
@@ -31,32 +35,32 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-	width: 4vw;
-	height: 5vh;
+	width: 4rem;
+	height: 3rem;
 }
 .title-container {
-	margin-left: 4vw;
+	margin-left: 4rem;
 	align-items: center;
 	display: flex;
 }
 .title-text {
 	font-weight: bold;
-	color: white;
+	color: var(--white);
 	font-size: 1.5rem;
 }
 .home {
-	padding-inline: 1vw;
+	padding-inline: 1rem;
 	border-radius: 5px;
 	border-width: 1.5px;
-	border-color: white;
+	border-color: var(--white);
 	border-style: solid;
 }
 .about-me {
-	padding-inline: 1vw;
+	padding-inline: 1rem;
 }
 .center-container {
 	display: flex;
-	margin-top: 5vw;
+	margin-top: 7rem;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -66,33 +70,33 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-	width: 10vw;
-	height: 20vw;
+	width: 13rem;
+	height: 13rem;
 }
 .name-text {
 	font-weight: bold;
-	color: white;
+	color: var(--white);
 	font-size: 3rem;
-	margin-top: -7vw;
+	margin-top: 3rem;
 }
 .subtitle-text {
-	color: white;
+	color: var(--white);
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin-top: -2.5vh;
+	margin-top: -1rem;
 }
 .contact-container {
-	margin-top: 8vh;
-	padding-inline: 1vw;
+	margin-top: 2rem;
+	padding-inline: 1rem;
 	border-radius: 5px;
 	border-width: 1.5px;
-	border-color: white;
+	border-color: var(--white);
 	border-style: solid;
 }
 .contact-text {
-	padding: 2px 10px 2px 10px;
+	padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 	text-align: center;
-	color: white;
+	color: var(--white);
 	font-weight: 500;
 	font-size: 0.9rem;
 }

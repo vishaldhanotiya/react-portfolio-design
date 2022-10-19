@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/ThirdSection.css";
+import "../components/ThirdSection.scss";
 export default function ThirdSection() {
 	return (
 		<div id="thirdSection" className="main-background">

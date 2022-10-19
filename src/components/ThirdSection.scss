@@ -1,25 +1,32 @@
+@import "../res/theme/variable";
+:root {
+	--white: #{$white};
+	--gray: #{$gray};
+	--blood-red: #{$blood-red};
+}
 .main-background {
-	background-color: #df5757;
+	background-color: var(--blood-red);
 }
 
 .third-title-text {
-	color: white;
-	padding-top: 8vh;
+	color: var(--white);
+	padding-top: 5rem;
 	font-weight: bold;
 	font-size: 2.2rem;
 }
 .subtitle-text {
-	color: white;
+	color: var(--white);
+	padding-top: 1rem;
 	font-size: 1rem;
 }
 .second-container {
 	display: flex;
-	padding-top: 2vw;
-	padding-bottom: 4vw;
+	padding-top: 1rem;
+	padding-bottom: 5rem;
 	justify-content: center;
 }
 .first-section {
-	margin: 2.5vw;
+	margin: 2.5rem;
 }
 .first-image {
 	margin-left: auto;
@@ -28,8 +35,8 @@
 	background-position: center;
 	background-size: contain;
 	background-image: url(../res/imac.png);
-	width: 4vw;
-	height: 4vw;
+	width: 4rem;
+	height: 4rem;
 }
 .second-image {
 	margin-left: auto;
@@ -38,8 +45,8 @@
 	background-position: center;
 	background-size: contain;
 	background-image: url(../res/instagram-logo.png);
-	width: 4vw;
-	height: 4vw;
+	width: 4rem;
+	height: 4rem;
 }
 .third-image {
 	margin-left: auto;
@@ -48,8 +55,8 @@
 	background-position: center;
 	background-size: contain;
 	background-image: url(../res/tools-and-utensils.png);
-	width: 4vw;
-	height: 4vw;
+	width: 4rem;
+	height: 4rem;
 }
 .fourth-image {
 	margin-left: auto;
@@ -58,15 +65,15 @@
 	background-position: center;
 	background-size: contain;
 	background-image: url(../res/puzzle.png);
-	width: 4vw;
-	height: 4vw;
+	width: 4rem;
+	height: 4rem;
 }
 .web-title {
 	font-size: 1.4rem;
 	font-weight: bold;
-	color: white;
+	color: var(--white);
 }
 .web-subtitle {
 	font-size: 0.8rem;
-	color: white;
+	color: var(--white);
 }

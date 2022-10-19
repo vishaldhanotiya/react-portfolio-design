@@ -1,5 +1,5 @@
 import React from "react";
-import "./SixthSection.css";
+import "./SixthSection.scss";
 const gridImage = [
 	{
 		text: "Another blog post",
