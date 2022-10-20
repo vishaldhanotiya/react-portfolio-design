@@ -5,11 +5,11 @@ const FirstSection = (props) => {
 		<div id="firstSection">
 			<div className="background-image">
 				<div className="header-container">
-					<div className="title-container">
-						<div className="logo" />
-						<p className="title-text">Planus</p>
+					<div className="company-container">
+						<div className="company-logo" />
+						<p className="company-name">Planus</p>
 					</div>
-					<div className="header">
+					<div className="menu-container">
 						<div className="home">
 							<p className="menu-text">
 								<a href="#firstSection">Home</a>

@@ -5,113 +5,463 @@
 	--green: #{$green};
 	--dark-green: #{$dark-green};
 }
-.seventh-background {
-	background-color: #579e6b;
-}
-.seventh-title {
-	color: var(--white);
-	padding-top: 5rem;
-	font-weight: bold;
-	font-size: 2.2rem;
-}
-.seventh-subtitle {
-	color: var(--white);
-	font-size: 1rem;
-}
-.touch-container {
-	display: flex;
-	justify-content: center;
-}
-.location-margin {
-	margin: 2rem;
-}
-.pin-image {
-	margin-left: auto;
-	margin-right: auto;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	background-image: url(../res/pin.png);
-	width: 2rem;
-	height: 2rem;
-}
-.email-image {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: url(../res/email.png);
-	width: 2rem;
-	height: 2rem;
-	margin-left: auto;
-	margin-right: auto;
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Mobile Devices */
+@media (min-width: 360px) and (max-width: 600px) {
+	.seventh-background {
+		background-color: #579e6b;
+	}
+	.seventh-title {
+		color: var(--white);
+		padding-top: 5rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.seventh-subtitle {
+		color: var(--white);
+		font-size: 1rem;
+	}
+	.touch-container {
+		display: flex;
+		justify-content: center;
+	}
+	.location-margin {
+		margin: 2rem;
+	}
+	.pin-image {
+		margin-left: auto;
+		margin-right: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../res/pin.png);
+		width: 2rem;
+		height: 2rem;
+	}
+	.email-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/email.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.call-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/call.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.address-text {
+		font-size: 0.9rem;
+		color: var(--white);
+	}
+	.name-input {
+		width: 15rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.email-input {
+		color: var(--white);
+		width: 15rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.message-input {
+		width: 15rem;
+		height: 9rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 2rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.submit-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.submit-button {
+		color: var(--white);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin-bottom: 5rem;
+		background-color: var(--green);
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--white);
+		border-style: solid;
+	}
 }
 
-.call-image {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: url(../res/call.png);
-	width: 2rem;
-	height: 2rem;
-	margin-left: auto;
-	margin-right: auto;
+/* Medium devices (landscape tablets, 768px and up) */
+/* Tablets iPads (Portrait) */
+@media (min-width: 600px) and (max-width: 1024px) {
+	.seventh-background {
+		background-color: #579e6b;
+	}
+	.seventh-title {
+		color: var(--white);
+		padding-top: 5rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.seventh-subtitle {
+		color: var(--white);
+		font-size: 1rem;
+	}
+	.touch-container {
+		display: flex;
+		justify-content: center;
+	}
+	.location-margin {
+		margin: 2rem;
+	}
+	.pin-image {
+		margin-left: auto;
+		margin-right: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../res/pin.png);
+		width: 2rem;
+		height: 2rem;
+	}
+	.email-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/email.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.call-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/call.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.address-text {
+		font-size: 0.9rem;
+		color: var(--white);
+	}
+	.name-input {
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.email-input {
+		color: var(--white);
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.message-input {
+		width: 40rem;
+		height: 9rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 2rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.submit-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.submit-button {
+		color: var(--white);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin-bottom: 5rem;
+		background-color: var(--green);
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--white);
+		border-style: solid;
+	}
 }
-.address-text {
-	font-size: 0.9rem;
-	color: var(--white);
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.seventh-background {
+		background-color: #579e6b;
+	}
+	.seventh-title {
+		color: var(--white);
+		padding-top: 5rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.seventh-subtitle {
+		color: var(--white);
+		font-size: 1rem;
+	}
+	.touch-container {
+		display: flex;
+		justify-content: center;
+	}
+	.location-margin {
+		margin: 2rem;
+	}
+	.pin-image {
+		margin-left: auto;
+		margin-right: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../res/pin.png);
+		width: 2rem;
+		height: 2rem;
+	}
+	.email-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/email.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.call-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/call.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.address-text {
+		font-size: 0.9rem;
+		color: var(--white);
+	}
+	.name-input {
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.email-input {
+		color: var(--white);
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.message-input {
+		width: 40rem;
+		height: 9rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 2rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.submit-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.submit-button {
+		color: var(--white);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin-bottom: 5rem;
+		background-color: var(--green);
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--white);
+		border-style: solid;
+	}
 }
-.name-input {
-	width: 40rem;
-	height: 2.5rem;
-	padding-inline: 1rem;
-	border-left-width: 0rem;
-	border-right-width: 0rem;
-	border-top-width: 0rem;
-	margin-bottom: 1rem;
-	border-bottom-width: 0.2rem;
-	background-color: var(--dark-green);
-	border-bottom-color: var(--white);
-}
-.email-input {
-	color: var(--white);
-	width: 40rem;
-	height: 2.5rem;
-	padding-inline: 1rem;
-	border-left-width: 0rem;
-	border-right-width: 0rem;
-	border-top-width: 0rem;
-	margin-bottom: 1rem;
-	border-bottom-width: 0.2rem;
-	background-color: var(--dark-green);
-	border-bottom-color: var(--white);
-}
-.message-input {
-	width: 40rem;
-	height: 9rem;
-	padding-inline: 1rem;
-	border-left-width: 0rem;
-	border-right-width: 0rem;
-	border-top-width: 0rem;
-	margin-bottom: 2rem;
-	border-bottom-width: 0.2rem;
-	background-color: var(--dark-green);
-	border-bottom-color: var(--white);
-}
-.submit-container {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-}
-.submit-button {
-	color: var(--white);
-	font-weight: 500;
-	font-size: 0.9rem;
-	margin-bottom: 5rem;
-	background-color: var(--green);
-	padding-inline: 1rem;
-	padding-block: 0.8rem;
-	border-radius: 0.5rem;
-	border-width: 2px;
-	border-color: var(--white);
-	border-style: solid;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Big Monitors */
+@media only screen and (min-width: 1281px) {
+	.seventh-background {
+		background-color: #579e6b;
+	}
+	.seventh-title {
+		color: var(--white);
+		padding-top: 5rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.seventh-subtitle {
+		color: var(--white);
+		font-size: 1rem;
+	}
+	.touch-container {
+		display: flex;
+		justify-content: center;
+	}
+	.location-margin {
+		margin: 2rem;
+	}
+	.pin-image {
+		margin-left: auto;
+		margin-right: auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url(../res/pin.png);
+		width: 2rem;
+		height: 2rem;
+	}
+	.email-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/email.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.call-image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url(../res/call.png);
+		width: 2rem;
+		height: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.address-text {
+		font-size: 0.9rem;
+		color: var(--white);
+	}
+	.name-input {
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.email-input {
+		color: var(--white);
+		width: 40rem;
+		height: 2.5rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 1rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.message-input {
+		width: 40rem;
+		height: 9rem;
+		padding-inline: 1rem;
+		border-left-width: 0rem;
+		border-right-width: 0rem;
+		border-top-width: 0rem;
+		margin-bottom: 2rem;
+		border-bottom-width: 0.2rem;
+		background-color: var(--dark-green);
+		border-bottom-color: var(--white);
+	}
+	.submit-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.submit-button {
+		color: var(--white);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin-bottom: 5rem;
+		background-color: var(--green);
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--white);
+		border-style: solid;
+	}
 }
