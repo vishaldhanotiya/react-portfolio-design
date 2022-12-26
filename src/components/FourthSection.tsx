@@ -61,12 +61,12 @@ export default function FourthSection() {
 							style={{
 								color: item.selected ? "white" : "#df5757",
 								fontWeight: "500",
-								fontSize: "0.9em",
+								fontSize: "0.9rem",
 								margin: 10,
 								backgroundColor: item.selected
 									? "#df5757"
 									: "white",
-								paddingInline: 13,
+								paddingInline: 10,
 								paddingBlock: 5,
 								borderRadius: 5,
 								borderWidth: "2px",

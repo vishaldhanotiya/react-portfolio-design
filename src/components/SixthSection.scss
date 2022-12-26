@@ -4,62 +4,257 @@
 	--gray: #{$gray};
 	--blood-red: #{$blood-red};
 }
-.sixth-title {
-	color: var(--gray);
-	padding-top: 4rem;
-	font-weight: bold;
-	font-size: 2.2rem;
-}
-.blog-list {
-	justify-content: center;
-	display: flex;
-	margin-inline: 1rem;
-	grid-template-columns: 30rem 30rem 30rem 30rem;
-	list-style: none;
-}
-.blog-text-container {
-	margin: 2rem;
-	padding: 0;
-}
-.blog-title {
-	margin-top: 3rem;
-	color: var(--white);
-	font-weight: bold;
-	font-size: 1.2rem;
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Mobile Devices */
+@media (min-width: 360px) and (max-width: 600px) {
+	.sixth-title {
+		color: var(--gray);
+		padding-top: 4rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.blog-list {
+		justify-content: center;
+		display: flex;
+		margin-inline: 1rem;
+		grid-template-columns: 30rem 30rem 30rem 30rem;
+		list-style: none;
+	}
+	.blog-text-container {
+		margin: 2rem;
+		padding: 0;
+	}
+	.blog-title {
+		margin-top: 3rem;
+		color: var(--white);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.blog-content {
+		margin-top: 3rem;
+		font-size: 0.8rem;
+		color: var(--white);
+	}
+	.blog-button-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.blog-button {
+		color: var(--blood-red);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin: 2rem;
+		margin-bottom: 4rem;
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--blood-red);
+		border-style: solid;
+	}
+	.blog-image {
+		margin: 1.5rem;
+		height: 24rem;
+		width: 20rem;
+		font-weight: 500;
+		font-size: 0.9rem;
+		border-radius: 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+	}
 }
 
-.blog-content {
-	margin-top: 3rem;
-	font-size: 0.8rem;
-	color: var(--white);
+/* Medium devices (landscape tablets, 768px and up) */
+/* Tablets iPads (Portrait) */
+@media (min-width: 600px) and (max-width: 1024px) {
+	.sixth-title {
+		color: var(--gray);
+		padding-top: 4rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.blog-list {
+		justify-content: center;
+		display: flex;
+		margin-inline: 1rem;
+		grid-template-columns: 30rem 30rem 30rem 30rem;
+		list-style: none;
+	}
+	.blog-text-container {
+		margin: 2rem;
+		padding: 0;
+	}
+	.blog-title {
+		margin-top: 3rem;
+		color: var(--white);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.blog-content {
+		margin-top: 3rem;
+		font-size: 0.8rem;
+		color: var(--white);
+	}
+	.blog-button-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.blog-button {
+		color: var(--blood-red);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin: 2rem;
+		margin-bottom: 4rem;
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--blood-red);
+		border-style: solid;
+	}
+	.blog-image {
+		margin: 1.5rem;
+		height: 24rem;
+		width: 20rem;
+		font-weight: 500;
+		font-size: 0.9rem;
+		border-radius: 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+	}
 }
-.blog-button-container {
-	display: flex;
-	justify-content: center;
-	align-self: center;
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.sixth-title {
+		color: var(--gray);
+		padding-top: 4rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.blog-list {
+		justify-content: center;
+		display: flex;
+		margin-inline: 1rem;
+		grid-template-columns: 30rem 30rem 30rem 30rem;
+		list-style: none;
+	}
+	.blog-text-container {
+		margin: 2rem;
+		padding: 0;
+	}
+	.blog-title {
+		margin-top: 3rem;
+		color: var(--white);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.blog-content {
+		margin-top: 3rem;
+		font-size: 0.8rem;
+		color: var(--white);
+	}
+	.blog-button-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.blog-button {
+		color: var(--blood-red);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin: 2rem;
+		margin-bottom: 4rem;
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--blood-red);
+		border-style: solid;
+	}
+	.blog-image {
+		margin: 1.5rem;
+		height: 24rem;
+		width: 20rem;
+		font-weight: 500;
+		font-size: 0.9rem;
+		border-radius: 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+	}
 }
-.blog-button {
-	color: var(--blood-red);
-	font-weight: 500;
-	font-size: 0.9rem;
-	margin: 2rem;
-	margin-bottom: 4rem;
-	padding-inline: 1rem;
-	padding-block: 0.8rem;
-	border-radius: 0.5rem;
-	border-width: 2px;
-	border-color: var(--blood-red);
-	border-style: solid;
-}
-.blog-image {
-	margin: 1.5rem;
-	height: 24rem;
-	width: 20rem;
-	font-weight: 500;
-	font-size: 0.9rem;
-	border-radius: 2rem;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Big Monitors */
+@media only screen and (min-width: 1281px) {
+	.sixth-title {
+		color: var(--gray);
+		padding-top: 4rem;
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
+	.blog-list {
+		justify-content: center;
+		display: flex;
+		margin-inline: 1rem;
+		grid-template-columns: 30rem 30rem 30rem 30rem;
+		list-style: none;
+	}
+	.blog-text-container {
+		margin: 2rem;
+		padding: 0;
+	}
+	.blog-title {
+		margin-top: 3rem;
+		color: var(--white);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.blog-content {
+		margin-top: 3rem;
+		font-size: 0.8rem;
+		color: var(--white);
+	}
+	.blog-button-container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.blog-button {
+		color: var(--blood-red);
+		font-weight: 500;
+		font-size: 0.9rem;
+		margin: 2rem;
+		margin-bottom: 4rem;
+		padding-inline: 1rem;
+		padding-block: 0.8rem;
+		border-radius: 0.5rem;
+		border-width: 2px;
+		border-color: var(--blood-red);
+		border-style: solid;
+	}
+	.blog-image {
+		margin: 1.5rem;
+		height: 24rem;
+		width: 20rem;
+		border-radius: 2rem;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+	}
 }
