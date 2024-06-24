@@ -21,12 +21,12 @@ jobs:
           node-version: 18
 
       - name: Build
-        run: yarn build-web
+        run: yarn run build
 
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
-          publish-dir: './web-build'
+          publish-dir: 'build'
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: 'Staging Deploy from GitHub Actions'
           production-deploy: true
