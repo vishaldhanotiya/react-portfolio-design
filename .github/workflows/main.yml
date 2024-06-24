@@ -1,0 +1,36 @@
+name: Publish Netlify
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - My-portfile
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Yarn install
+        run: yarn install --prefer-offline --frozen-lockfile
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Build
+        run: yarn build-web
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2
+        with:
+          publish-dir: './web-build'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: 'Staging Deploy from GitHub Actions'
+          production-deploy: true
+          github-deployment-description: 'My Portfolio Website'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
