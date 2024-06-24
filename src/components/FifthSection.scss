@@ -1,72 +1,71 @@
 @import "../res/theme/variable";
 :root {
-	--white: #{$white};
-	--gray: #{$gray};
-	--blood-red: #{$blood-red};
+  --white: #{$white};
+  --gray: #{$gray};
+  --blood-red: #{$blood-red};
 }
 .fifth-title {
-	color: var(--gray);
-	padding-top: 6rem;
-	font-weight: bold;
-	font-size: 2.2rem;
+  color: #f51940;
+  padding-top: 6rem;
+  font-weight: bold;
+  font-size: 2.2rem;
 }
 .pagination-container {
-	justify-content: center;
-	display: flex;
+  justify-content: center;
+  display: flex;
 }
 .pagination {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .review-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left-arrow {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	background-image: url(../res/left-arrow.png);
-	width: 2rem;
-	height: 2rem;
-	margin-right: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../res/left-arrow.png);
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
 }
 .right-arrow {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	background-image: url(../res/right-arrow.png);
-	margin-left: 3rem;
-	width: 2rem;
-	height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../res/right-arrow.png);
+  margin-left: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 .review-text-container {
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .reviewer-name {
-	color: var(--gray);
-	font-weight: bold;
-	font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .reviewer-review {
-	font-size: 1rem;
-	color: var(--gray);
+  font-size: 1rem;
+  color: var(--gray);
 }
 .image-container {
-	margin-block: 1rem;
-	display: block;
-	justify-content: center;
-	align-items: center;
+  margin-block: 1rem;
+  display: block;
+
+  justify-content: center;
+  align-items: center;
 }
 .reviewer-image-item {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	border-radius: 4rem;
-	margin-left: auto;
-	margin-right: auto;
-	width: 8rem;
-	height: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50rem;
+  border-radius: 1%;
+  height: 30rem;
 }

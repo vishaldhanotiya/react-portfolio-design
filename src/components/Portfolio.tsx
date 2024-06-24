@@ -8,17 +8,19 @@ import SixthSection from "./SixthSection.tsx";
 import ThirdSection from "./ThirdSection.tsx";
 
 const Portfolio = (props) => {
-	return (
-		<div>
-			<FirstSection {...props} />
-			<SecondSection />
-			<ThirdSection />
-			<FourthSection />
-			<FifthSection />
-			<SixthSection />
-			<SeventhSection />
-		</div>
-	);
+  return (
+    <div>
+      <FirstSection {...props} />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+
+      <SixthSection />
+
+      <SeventhSection />
+    </div>
+  );
 };
 
 export default Portfolio;
