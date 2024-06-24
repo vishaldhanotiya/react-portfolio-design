@@ -1,93 +1,51 @@
 import React from "react";
 import "./FourthSection.scss";
-const workType = [
-	{
-		title: "All",
-		selected: true,
-	},
-	{
-		title: "Graphics",
-		selected: false,
-	},
-	{
-		title: "Styles",
-		selected: false,
-	},
-	{
-		title: "User Interfaces",
-		selected: false,
-	},
-	{
-		title: "Web Design",
-		selected: false,
-	},
-];
-
-const gridImage = [
-	{ text: "cat", value: "https://i.imgur.com/CzXTtJV.jpg" },
-	{ text: "dog", value: "https://i.imgur.com/OB0y6MR.jpg" },
-	{
-		text: "fox",
-		value: "https://farm4.staticflickr.com/3852/14447103450_2d0ff8802b_z_d.jpg",
-	},
-	{
-		text: "cheetah",
-		value: "https://farm2.staticflickr.com/1533/26541536141_41abe98db3_z_d.jpg",
-	},
-	{
-		text: "bird",
-		value: "https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg",
-	},
-	{ text: "bridge", value: "https://i.imgur.com/OnwEDW3.jpg" },
-	{
-		text: "lighthouse",
-		value: "https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg",
-	},
-
-	{
-		text: "sailboat",
-		value: "https://farm7.staticflickr.com/6089/6115759179_86316c08ff_z_d.jpg",
-	},
-];
 
 export default function FourthSection() {
-	return (
-		<div id="fourthSection">
-			<p className="fourth-title">THIS IS MY WORK</p>
-			<ol className="option-list">
-				{workType.map((item, index) => {
-					return (
-						<li
-							style={{
-								color: item.selected ? "white" : "#df5757",
-								fontWeight: "500",
-								fontSize: "0.9rem",
-								margin: 10,
-								backgroundColor: item.selected
-									? "#df5757"
-									: "white",
-								paddingInline: 10,
-								paddingBlock: 5,
-								borderRadius: 5,
-								borderWidth: "2px",
-								borderColor: "#df5757",
-								borderStyle: "solid",
-							}}
-						>
-							{item.title}
-						</li>
-					);
-				})}
-			</ol>
+  return (
+    <div
+      style={{ marginTop: -50, backgroundColor: "#000000" }}
+      id="fourthSection"
+    >
+      <p className="fourth-title">Experience</p>
 
-			<div className="image-list">
-				{gridImage.map((item, index) => {
-					return <img className="grid-image-item" src={item.value} />;
-				})}
-			</div>
-			<div className="button-container">
-				<div className="button">{"MORE WORK"}</div>
-			</div>
-		</div>
-	);
+      <div className="section-1">
+        <div className="column-1">
+          <div className="back-ground">
+            <span className="text-1">{"Persistent Systems"}</span>
+            <span className="text-2">{"Engineering Lead"}</span>
+            <span className="text-2">{"Mar 2022 to Present"}</span>
+          </div>
+          <br></br>
+          <br></br>
+          <div className="back-ground">
+            <span className="text-1">{"Codiant Software Technologies"}</span>
+            <span className="text-2">{"Senior Software Engineer"}</span>
+            <span className="text-2">{"Dec 2017 - Feb 2022"}</span>
+          </div>
+          <br></br>
+          <br></br>
+          <div className="back-ground">
+            <span className="text-1">
+              {"Young Decade IT Software Solution"}
+            </span>
+            <span className="text-2">{"Software Engineer"}</span>
+            <span className="text-2">{"May 2016 - Nov 2017"}</span>
+          </div>
+          <br></br>
+          <br></br>
+          <div className="back-ground">
+            <span className="text-1">
+              {"Canopus Infosystems Private Limited "}
+            </span>
+            <span className="text-2">{"Junior Software Engineer"}</span>
+            <span className="text-2">{"Dec 2015 - Feb 2016"}</span>
+          </div>
+        </div>
+        <div className="column-1">
+          <div className="logo-1" />
+        </div>
+      </div>
+    </div>
+  );
 }

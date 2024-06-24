@@ -1,421 +1,494 @@
 @import "../res/theme/variable";
 :root {
-	--white: #{$white};
+  --white: #{$white};
 }
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
-	.header-container {
-		justify-content: center;
-		padding: 1rem;
-		display: flex;
-	}
-	.menu-container {
-		flex: 1;
-		margin-inline: 4rem;
-		align-items: center;
-		display: none;
-		justify-content: flex-end;
-	}
-	.company-container {
-		justify-content: center;
-		align-items: center;
-		display: flex;
-	}
-	.company-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		margin: 1rem;
-		width: 3rem;
-		height: 3rem;
-	}
-	.company-name {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 2rem;
-	}
+  .header-container {
+    justify-content: center;
+    padding: 1rem;
+    display: flex;
+  }
+  .menu-container {
+    flex: 1;
+    margin-inline: 4rem;
+    align-items: center;
+    display: none;
+    justify-content: flex-end;
+  }
+  .company-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .company-logo {
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .company-name {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2rem;
+  }
 
-	.home {
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.menu-text {
-		padding: 0px 1rem 0px 1rem;
-		text-align: center;
-		color: var(--white);
-		font-size: 0.8rem;
-	}
+  .home {
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .menu-text {
+    padding: 0px 1rem 0px 1rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.8rem;
+  }
 
-	.background-image {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
-			url("https://s1.1zoom.me/b5050/159/Coffee_Laptops_Hands_Table_533543_3840x2400.jpg");
-		width: 100%;
-		height: 56rem;
-	}
-	.center-container {
-		display: flex;
-		margin-top: 3rem;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.center-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		width: 13rem;
-		height: 13rem;
-	}
-	.name-text {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 3rem;
-		margin-top: 3rem;
-	}
-	.subtitle-text {
-		color: var(--white);
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin-top: -1rem;
-	}
-	.contact-container {
-		margin-top: 2rem;
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.contact-text {
-		padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-		text-align: center;
-		color: var(--white);
-		font-weight: 500;
-		font-size: 0.9rem;
-	}
-	.about-me {
-		padding-inline: 0.5rem;
-	}
+  .background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
+      url(../res/background1.png);
+    width: 100%;
+    height: 56rem;
+  }
+  .center-container {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-logo {
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../res/background3.png);
+    width: 20rem;
+    height: 20rem;
+  }
+  .name-text {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .subtitle-text {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -1rem;
+  }
+  .contact-container {
+    margin-top: 2rem;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .contact-text {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .about-me {
+    padding-inline: 0.5rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
-	.company-name {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 2rem;
-	}
-	.header-container {
-		padding: 1rem;
-		display: block;
-	}
-	.menu-container {
-		flex: 1;
-		margin-inline: 15rem;
-		align-items: center;
-		display: block;
-		justify-content: flex-end;
-	}
-	.company-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		margin: 1rem;
-		width: 4rem;
-		height: 4rem;
-	}
-	.company-container {
-		justify-content: center;
-		align-items: center;
-		display: flex;
-	}
-	.home {
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.about-me {
-		padding-inline: 0.7rem;
-	}
-	.menu-text {
-		padding: 0px 1rem 0px 1rem;
-		text-align: center;
-		color: var(--white);
-		font-size: 1rem;
-	}
+  .company-name {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2rem;
+  }
+  .header-container {
+    padding: 1rem;
+    display: block;
+  }
+  .menu-container {
+    flex: 1;
+    margin-inline: 15rem;
+    align-items: center;
+    display: block;
+    justify-content: flex-end;
+  }
+  .company-logo {
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    //background-image: url(../res/my-photo.png);
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .company-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .home {
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .about-me {
+    padding-inline: 0.7rem;
+  }
+  .menu-text {
+    padding: 0px 1rem 0px 1rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 1rem;
+  }
 
-	.background-image {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
-			url("https://s1.1zoom.me/b5050/159/Coffee_Laptops_Hands_Table_533543_3840x2400.jpg");
-		width: 100%;
-		height: 56rem;
-	}
-	.center-container {
-		display: flex;
-		margin-top: 1rem;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.center-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		width: 12rem;
-		height: 12rem;
-	}
-	.name-text {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 2rem;
-		margin-top: 2.5rem;
-	}
-	.subtitle-text {
-		color: var(--white);
-		font-size: 1rem;
-		font-weight: 400;
-		margin-top: -2rem;
-	}
-	.contact-container {
-		margin-top: 1rem;
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.contact-text {
-		padding: 0.2rem;
-		text-align: center;
-		color: var(--white);
-		font-weight: 500;
-		font-size: 0.9rem;
-	}
+  .background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
+      url(../res/background1.png);
+    width: 100%;
+    height: 56rem;
+  }
+  .center-container {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-logo {
+    background-size: cover;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-image: url(../res/background3.png);
+    width: 12rem;
+    height: 12rem;
+  }
+  .name-text {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2rem;
+    margin-top: 2.5rem;
+  }
+  .subtitle-text {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -2rem;
+  }
+  .contact-container {
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .contact-text {
+    padding: 0.2rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-	.company-name {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 1.5rem;
-	}
-	.header-container {
-		padding: 1rem;
-		display: flex;
-	}
-	.menu-container {
-		flex: 1;
-		margin: 1rem;
-		align-items: center;
-		display: flex;
-		justify-content: flex-end;
-	}
-	.company-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		margin: 1rem;
-		width: 3rem;
-		height: 3rem;
-	}
-	.company-container {
-		margin-left: 4rem;
-		align-items: center;
-		display: flex;
-	}
-	.home {
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.menu-text {
-		padding: 0px 1rem 0px 1rem;
-		text-align: center;
-		color: var(--white);
-		font-size: 0.8rem;
-	}
+  .company-name {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+  .header-container {
+    padding: 1rem;
+    display: flex;
+  }
+  .menu-container {
+    flex: 1;
+    margin: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .company-logo {
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .company-container {
+    margin-left: 4rem;
+    align-items: center;
+    display: flex;
+  }
+  .home {
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .menu-text {
+    padding: 0px 1rem 0px 1rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.8rem;
+  }
 
-	.background-image {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
-			url("https://s1.1zoom.me/b5050/159/Coffee_Laptops_Hands_Table_533543_3840x2400.jpg");
-		width: 100%;
-		height: 56rem;
-	}
-	.center-container {
-		display: flex;
-		margin-top: 7rem;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.center-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		width: 13rem;
-		height: 13rem;
-	}
-	.name-text {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 3rem;
-		margin-top: 3rem;
-	}
-	.subtitle-text {
-		color: var(--white);
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin-top: -1rem;
-	}
-	.contact-container {
-		margin-top: 2rem;
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.contact-text {
-		padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-		text-align: center;
-		color: var(--white);
-		font-weight: 500;
-		font-size: 0.9rem;
-	}
-	.about-me {
-		padding-inline: 0.5rem;
-	}
+  .background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000);
+    width: 100%;
+    height: 56rem;
+  }
+  .center-container {
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .center-logo {
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../res/background3.png);
+    width: 13rem;
+    height: 13rem;
+  }
+  .name-text {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .subtitle-text {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -1rem;
+  }
+  .contact-container {
+    margin-top: 2rem;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .contact-text {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .about-me {
+    padding-inline: 0.5rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Big Monitors */
 @media only screen and (min-width: 1281px) {
-	.company-name {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 1.5rem;
-	}
-	.header-container {
-		padding: 1rem;
-		display: flex;
-	}
-	.menu-container {
-		flex: 1;
-		margin-right: 5rem;
-		align-items: center;
-		display: flex;
-		justify-content: flex-end;
-	}
-	.company-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		margin: 1rem;
-		width: 3rem;
-		height: 3rem;
-	}
-	.company-container {
-		margin-left: 4rem;
-		align-items: center;
-		display: flex;
-	}
-	.home {
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.menu-text {
-		padding: 0px 1rem 0px 1rem;
-		text-align: center;
-		color: var(--white);
-		font-size: 0.8rem;
-	}
+  .company-name {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+  .header-container {
+    padding: 1rem;
+    display: flex;
+  }
+  .menu-container {
+    flex: 1;
+    margin-right: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .company-logo {
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .company-container {
+    margin-left: 4rem;
+    align-items: center;
+    display: flex;
+  }
+  .home {
+    padding-inline: 1rem;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .menu-text {
+    padding: 0px 1rem 0px 1rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.8rem;
+  }
 
-	.background-image {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), #000),
-			url("https://s1.1zoom.me/b5050/159/Coffee_Laptops_Hands_Table_533543_3840x2400.jpg");
-		width: 100%;
-		height: 56rem;
-	}
-	.center-container {
-		display: flex;
-		margin-top: 7rem;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.center-logo {
-		background-position: cover;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url("https://www.seekpng.com/png/full/913-9131600_mfs-logo-white-accor-hotels-white-logo.png");
-		width: 13rem;
-		height: 13rem;
-	}
-	.name-text {
-		font-weight: bold;
-		color: var(--white);
-		font-size: 3rem;
-		margin-top: 3rem;
-	}
-	.subtitle-text {
-		color: var(--white);
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin-top: -1rem;
-	}
-	.contact-container {
-		margin-top: 2rem;
-		padding-inline: 1rem;
-		border-radius: 5px;
-		border-width: 1.5px;
-		border-color: var(--white);
-		border-style: solid;
-	}
-	.contact-text {
-		padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-		text-align: center;
-		color: var(--white);
-		font-weight: 500;
-		font-size: 0.9rem;
-	}
-	.about-me {
-		padding-inline: 0.5rem;
-	}
+  .background-image {
+    background-color: #000;
+  }
+
+  .center-containers {
+    display: flex;
+    flex-direction: row;
+    height: 42rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .center-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .center-logo {
+    margin-top: -3rem;
+    height: 30rem;
+  }
+
+  .name-text {
+    font-family: inherit; /* 1 */
+    font-weight: bold;
+    color: var(--white);
+    font-size: 3rem;
+    align-self: start;
+  }
+
+  .name-text2 {
+    font-weight: bold;
+    color: #ff004f;
+  }
+  .name-text1 {
+    font-weight: bold;
+    color: #ff004f;
+    font-size: 2rem;
+    align-self: start;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(14deg);
+    }
+    30% {
+      transform: rotate(-8deg);
+    }
+    40% {
+      transform: rotate(14deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .wave-emoji {
+    display: inline-block;
+    animation: wave 2s infinite;
+  }
+  .subtitle-text {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: -1rem;
+  }
+  .contact {
+    display: flex;
+    width: 50%;
+
+    justify-content: space-around;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+  .contact-container {
+    width: 32px; /* Set the desired width */
+    height: 32px; /* Set the desired height */
+    border-radius: 50%; /* Make the div a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1.5px;
+    border-color: var(--white);
+    border-style: solid;
+  }
+  .github {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-image: url("../res/github.png");
+  }
+  .facebook-logo {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-image: url("../res/facebook.png");
+  }
+  .linkedin {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-image: url("../res/linkedin.png");
+  }
+  .media {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url("../res/media.png");
+  }
+  .instagram {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-image: url("../res/instagram.png");
+  }
+  .about-me {
+    padding-inline: 0.5rem;
+  }
 }
