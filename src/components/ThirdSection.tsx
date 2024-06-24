@@ -13,47 +13,47 @@ export default function ThirdSection() {
         <div className="first-section">
           <div className="skill-1">
             <img
-              alt=""
+              alt="img1"
               src={require("../res/html.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img2"
               src={require("../res/social.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img3"
               src={require("../res/js.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img4"
               src={require("../res/typescript.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img5"
               src={require("../res/physics.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img6"
               src={require("../res/redux.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img6"
               src={require("../res/sass.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img7"
               src={require("../res/firebase.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img8"
               src={require("../res/socket.png")}
               className="skill-image"
             />
@@ -64,37 +64,37 @@ export default function ThirdSection() {
         <div className="first-section">
           <div className="skill-1">
             <img
-              alt=""
+              alt="img9"
               src={require("../res/android.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img10"
               src={require("../res/xcode.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img11"
               src={require("../res/windows.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img12"
               src={require("../res/postman.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img13"
               src={require("../res/Swagger.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img14"
               src={require("../res/git.png")}
               className="skill-image"
             />
             <img
-              alt=""
+              alt="img15"
               src={require("../res/githubs.png")}
               className="skill-image"
             />

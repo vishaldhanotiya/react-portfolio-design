@@ -79,6 +79,7 @@ const FirstSection = (props) => {
           </div>
           <div>
             <img
+              alt="logo1"
               className="center-logo"
               src={require("../res/background3.png")}
             />

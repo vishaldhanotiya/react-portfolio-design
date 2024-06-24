@@ -110,6 +110,7 @@ export default function FifthSection() {
         />
         <div className="image-container">
           <img
+            alt="review"
             className="reviewer-image-item"
             src={gridImage[activeIndex].value}
           />
