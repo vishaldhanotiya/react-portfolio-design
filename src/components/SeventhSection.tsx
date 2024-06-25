@@ -7,32 +7,41 @@ export default function SeventhSection() {
       id="seventhSection"
       className="seventh-background"
     >
-      <p className="seventh-title">LET'S GET IN TOUCH</p>
+      <p className="seventh-title">Let's Get In Touch</p>
 
-      <p className="seventh-subtitle">
+      {/* <p className="seventh-subtitle">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. <br />
         Lorem Ipsum standard dummy text ever since the 1500s,
         <br /> when an unknown printer took a galley specimen book.
-      </p>
+      </p> */}
       <div className="touch-container">
         <div className="location-margin">
-          <div className="pin-image" />
+          <img
+            alt="location"
+            src={require("../res/pin.png")}
+            className="pin-image"
+          />
 
-          <p className="address-text">
-            Big Street AVE, 254 Los Angeles <br />
-            California
-          </p>
+          <p className="address-text">India</p>
         </div>
         <div className="location-margin">
-          <div className="email-image" />
+          <img
+            src={require("../res/email.png")}
+            alt="pin"
+            className="pin-image"
+          />
 
-          <p className="address-text">contact@planus.com</p>
+          <p className="address-text">vishal.dhanotiya2@gmail.com</p>
         </div>
         <div className="location-margin">
-          <div className="call-image" />
+          <img
+            src={require("../res/call.png")}
+            alt="email"
+            className="pin-image"
+          />
 
-          <p className="address-text">(544)-746-28902</p>
+          <p className="address-text">9179237008</p>
         </div>
       </div>
       <div style={{ display: "block", justifyContent: "center" }}>
@@ -42,7 +51,7 @@ export default function SeventhSection() {
         <br />
         <input className="message-input" />
         <div className="submit-container">
-          <div className="submit-button">{"SUBMIT"}</div>
+          <div className="submit-button">{"Submit"}</div>
         </div>
       </div>
     </div>

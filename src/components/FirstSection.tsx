@@ -7,83 +7,86 @@ const FirstSection = (props) => {
 
   return (
     <div id="firstSection">
-      <div className="background-image">
-        <div className="header-container">
-          <div className="menu-container">
-            <div className="home">
-              <p className="menu-text">
-                <a href="#firstSection">Home</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#secondSection">About me</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#thirdSection">My Skills</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#fourthSection">My Portfolio</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#fifthSection">Experience</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#sixthSection">Blog</a>
-              </p>
-            </div>
-            <div className="about-me">
-              <p className="menu-text">
-                <a href="#seventhSection">Contact</a>
-              </p>
-            </div>
-          </div>
+      <div className="background">
+        <div className="nav-container">
+          <p className="nav-text">
+            <a href="#firstSection">Home</a>
+          </p>
+          <p className="nav-text">
+            <a href="#secondSection">About me</a>
+          </p>
+          <p className="nav-text">
+            <a href="#thirdSection">My Skills</a>
+          </p>
+          <p className="nav-text">
+            <a href="#fourthSection">Experience</a>
+          </p>
+          <p className="nav-text">
+            <a href="#fifthSection">Achievement</a>
+          </p>
+          <p className="nav-text">
+            <a href="#sixthSection">Blog</a>
+          </p>
+          <p className="nav-text">
+            <a href="#seventhSection">Contact</a>
+          </p>
         </div>
-        <div className="center-containers">
-          <div className="center-container">
-            <span className="name-text">
-              Hi There! <span className="wave-emoji">👋🏻</span>
+        <div className="home-container">
+          <div className="name-container">
+            <span className="hi-text">
+              Hello There! <span className="wave-emoji">👋🏻</span>
             </span>
-            <span className="name-text">
-              I'm <span className="name-text2">Vishal Dhanotiya</span>
+            <span className="hi-text">
+              I'm <span className="name-text">Vishal Dhanotiya</span>
             </span>
 
-            <p className="name-text1">
+            <p className="sub-text">
               <Type />
             </p>
-            <div className="contact">
-              <span className="contact-container">
-                <p className="github"></p>
+            <div className="social-section">
+              <span className="circle">
+                <img
+                  alt="github"
+                  src={require("../res/github.png")}
+                  className="img"
+                />
               </span>
-              <span className="contact-container">
-                <p className="facebook-logo"></p>
+              <span className="circle">
+                <img
+                  alt="facebook"
+                  src={require("../res/facebook.png")}
+                  className="img"
+                />
               </span>
-              <span className="contact-container">
-                <p className="media"></p>
+              <span className="circle">
+                <img
+                  alt="media"
+                  src={require("../res/stackoverflow.png")}
+                  className="img"
+                />
               </span>
-              <span className="contact-container">
-                <p className="linkedin"></p>
+              <span className="circle">
+                <img
+                  alt="linkedin"
+                  src={require("../res/linkedin.png")}
+                  className="img"
+                />
               </span>
-              <span className="contact-container">
-                <p className="instagram"></p>
+              <span className="circle">
+                <img
+                  alt="instagram"
+                  src={require("../res/instagram.png")}
+                  className="img"
+                />
               </span>
             </div>
           </div>
           <div>
             <img
-              alt="logo1"
-              className="center-logo"
-              src={require("../res/background3.png")}
+              alt="my-logo"
+              className="my-photo"
+              src={require("../res/myy.png")}
             />
-            {/* <div className="center-logo" /> */}
           </div>
         </div>
       </div>

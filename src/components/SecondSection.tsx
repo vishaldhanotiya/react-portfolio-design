@@ -3,28 +3,36 @@ import "../components/SecondSection.scss";
 export default function SecondSection() {
   return (
     <div style={{ backgroundColor: "#000000" }} id="secondSection">
-      <div className="section">
+      <div className="about-section">
         <div className="column">
-          <div className="logo" />
+          <img
+            alt="about-me"
+            src={require("../res/background3.png")}
+            className="logo"
+          />
         </div>
         <div className="column">
-          <p className="title">
-            About <span className="me">Me</span>
+          <p className="about-title">
+            About <span className="about-me">Me</span>
           </p>
-          <p className="text">
-            My name is Vishal Dhanotiya. I am a Frontend Mobile and Website
-            developer. In the early day of the my career I start working as a
-            android developer but after 2 year I got a opportunity to work on
-            React Native. Now I am enjoying to develop cross-platform
-            applications.
+          <p className="about-text">
+            My self <span className="span-text">Vishal Dhanotiya</span>. I am a
+            Frontend developer. My expertise lies in frontend technologies,
+            including <span className="span-text"> React Native</span>,
+            <span className="span-text"> React.js</span>, and
+            <span className="span-text"> JavaScript</span>. Currently, I'm
+            deeply engaged with
+            <span className="span-text"> HTML</span>,
+            <span className="span-text"> CSS</span> and
+            <span className="span-text"> TypeScript</span>, pushing the
+            boundaries of what can be achieved. I maintain a perpetual
             <br></br>
             <br></br>
             <br></br>
-            I'm also a passionate writer, with a blog and articles on various
-            platforms, where I share my expertise and insights into the world of
-            frontend development. I enjoy sharing my knowledge with others and
-            helping fellow developers understand and be creative with web
-            technologies.
+            I'm also a passionate to share my expertise and insights into the
+            world of frontend development. I enjoy sharing my knowledge with
+            others and helping fellow developers understand and be creative with
+            web and mobile technologies.
           </p>
         </div>
       </div>

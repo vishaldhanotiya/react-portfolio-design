@@ -48,7 +48,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../res/instagram-logo.png);
     width: 4rem;
     height: 4rem;
   }
@@ -126,7 +125,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../res/instagram-logo.png);
     width: 4rem;
     height: 4rem;
   }
@@ -204,7 +202,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../res/instagram-logo.png);
     width: 4rem;
     height: 4rem;
   }
@@ -244,19 +241,21 @@
 @media only screen and (min-width: 1281px) {
   .main-background {
     display: flex;
-    padding-left: 4rem;
+    padding-left: 6rem;
+    padding-top: 5rem;
     flex-direction: column;
     background-color: var(--black);
   }
 
-  .title {
-    font-size: 2rem;
+  .my-title {
+    font-weight: bold;
+    font-size: 3rem;
     text-align: start;
     color: white;
   }
-  .me {
+  .my-me {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 2rem;
     color: #f51940;
   }
 

@@ -30,7 +30,7 @@ export default function SixthSection() {
       style={{ marginBlock: -40, backgroundColor: "#000000" }}
       id="sixthSection"
     >
-      <p className="sixth-title">MY BLOG</p>
+      <p className="sixth-title">My Blog</p>
 
       <div className="blog-list">
         {gridImage.map((item, index) => {
