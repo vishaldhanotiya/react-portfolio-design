@@ -30,36 +30,10 @@
     margin: 2rem;
   }
   .pin-image {
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../res/pin.png);
     width: 2rem;
     height: 2rem;
-  }
-  .email-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/email.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  .call-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/call.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .address-text {
     font-size: 0.9rem;
     color: var(--white);
@@ -145,36 +119,10 @@
     margin: 2rem;
   }
   .pin-image {
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../res/pin.png);
     width: 2rem;
     height: 2rem;
-  }
-  .email-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/email.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  .call-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/call.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .address-text {
     font-size: 0.9rem;
     color: var(--white);
@@ -260,35 +208,8 @@
     margin: 2rem;
   }
   .pin-image {
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../res/pin.png);
     width: 2rem;
     height: 2rem;
-  }
-  .email-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/email.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .call-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/call.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
   .address-text {
     font-size: 0.9rem;
@@ -333,6 +254,7 @@
   }
   .submit-container {
     display: flex;
+    background-color: #ff004f;
     justify-content: center;
     align-self: center;
   }
@@ -341,10 +263,9 @@
     font-weight: 500;
     font-size: 0.9rem;
     margin-bottom: 5rem;
-    background-color: var(--white);
+    background-color: #ff004f;
     padding-inline: 1rem;
-    padding-block: 0.8rem;
-    border-radius: 0.5rem;
+
     border-width: 2px;
     border-color: var(--white);
     border-style: solid;
@@ -375,36 +296,10 @@
     margin: 2rem;
   }
   .pin-image {
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../res/pin.png);
     width: 2rem;
     height: 2rem;
-  }
-  .email-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/email.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 
-  .call-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../res/call.png);
-    width: 2rem;
-    height: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .address-text {
     font-size: 0.9rem;
     color: var(--white);
@@ -454,14 +349,14 @@
   .submit-button {
     color: var(--white);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5rem;
-    background-color: var(--white);
-    padding-inline: 1rem;
+    background-color: #ff004f;
+    width: 42rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;
-    border-color: var(--white);
+    border-color: #ff004f;
     border-style: solid;
   }
 }

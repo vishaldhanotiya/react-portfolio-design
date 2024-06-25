@@ -3,9 +3,7 @@ import "../components/ThirdSection.scss";
 export default function ThirdSection() {
   return (
     <div id="thirdSection" className="main-background">
-      <p className="title">
-        My <span className="me">Skils</span>
-      </p>
+      <p className="my-title">Skils</p>
 
       <div className="second-container">
         <p className="web-title">Languages and Libraries</p>
@@ -95,7 +93,7 @@ export default function ThirdSection() {
             />
             <img
               alt="img15"
-              src={require("../res/githubs.png")}
+              src={require("../res/github.png")}
               className="skill-image"
             />
           </div>
