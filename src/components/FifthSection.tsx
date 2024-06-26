@@ -41,7 +41,7 @@ const gridImage = [
   {
     id: 8,
     text: "Fastlane for React Native: Deploy your app autonomously!",
-    value: require("../res/certificate/certificate/fastlane.png"),
+    value: require("../res/certificate/fastlane.png"),
   },
   {
     id: 9,

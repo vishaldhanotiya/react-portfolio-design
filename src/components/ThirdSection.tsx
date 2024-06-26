@@ -79,7 +79,7 @@ export default function ThirdSection() {
         />
         <img
           alt="img13"
-          src={require("../res/Swagger.png")}
+          src={require("../res/swagger.png")}
           className="skill-image"
         />
         <img
