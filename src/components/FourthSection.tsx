@@ -8,7 +8,7 @@ export default function FourthSection() {
       id="fourthSection"
     >
       <div className="fourth-section">
-        <p className="fourth-title">Experience</p>
+        <p className="experience-title">Experience</p>
 
         <div className="experience-div">
           <div className="experience-box">

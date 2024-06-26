@@ -9,7 +9,7 @@ const FirstSection = (props) => {
     <div id="firstSection">
       <div className="background">
         <div className="nav-container">
-          <div className="vd-logo">
+          <div>
             <img
               alt="my-logo"
               width={250}
