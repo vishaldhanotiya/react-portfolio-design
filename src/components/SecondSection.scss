@@ -8,52 +8,45 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
-  .logo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-content: flex-start;
-    background-image: url(../res/my.png);
-    width: 45rem;
-    height: 40rem;
-  }
-  .section {
-    padding-top: 3rem;
+  .about-section {
+    padding-top: 6rem;
     padding-bottom: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
   }
-  .title {
+  .column {
+    flex: 33.33%;
+  }
+  .logo {
+    height: 25rem;
+  }
+
+  .about-title {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: start;
     color: white;
   }
-  .me {
+  .about-me {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 5rem;
     color: #f51940;
   }
-  .column {
-    margin-left: -6rem;
-    font-size: 2rem;
-    flex: 33.33%;
-  }
-  .text {
-    font-weight: 400;
-    text-align: justify;
-    width: 95%;
+
+  .about-text {
+    text-align: start;
+    width: 90%;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .text-contain {
-    width: 60%;
     justify-content: center;
     background-color: red;
     align-content: center;
   }
 
-  .sub-text {
-    font-weight: 400;
+  .span-text {
     color: #ff004f;
     font-size: 1.5rem;
     align-self: start;
@@ -63,52 +56,45 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
-  .logo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-content: flex-start;
-    background-image: url(../res/my.png);
-    width: 45rem;
-    height: 40rem;
-  }
-  .section {
-    padding-top: 3rem;
+  .about-section {
+    padding-top: 6rem;
     padding-bottom: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
   }
-  .title {
+  .column {
+    flex: 33.33%;
+  }
+  .logo {
+    height: 25rem;
+  }
+
+  .about-title {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: start;
     color: white;
   }
-  .me {
+  .about-me {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 5rem;
     color: #f51940;
   }
-  .column {
-    margin-left: -6rem;
-    font-size: 2rem;
-    flex: 33.33%;
-  }
-  .text {
-    font-weight: 400;
-    text-align: justify;
-    width: 95%;
+
+  .about-text {
+    text-align: start;
+    width: 90%;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .text-contain {
-    width: 60%;
     justify-content: center;
     background-color: red;
     align-content: center;
   }
 
-  .sub-text {
-    font-weight: 400;
+  .span-text {
     color: #ff004f;
     font-size: 1.5rem;
     align-self: start;
@@ -118,52 +104,45 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .logo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-content: flex-start;
-    background-image: url(../res/my.png);
-    width: 45rem;
-    height: 40rem;
-  }
-  .section {
-    padding-top: 3rem;
+  .about-section {
+    padding-top: 6rem;
     padding-bottom: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
     display: flex;
   }
-  .title {
+  .column {
+    flex: 33.33%;
+  }
+  .logo {
+    height: 25rem;
+  }
+
+  .about-title {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: start;
     color: white;
   }
-  .me {
+  .about-me {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 5rem;
     color: #f51940;
   }
-  .column {
-    margin-left: -6rem;
-    font-size: 2rem;
-    flex: 33.33%;
-  }
-  .text {
-    font-weight: 400;
-    text-align: justify;
-    width: 95%;
+
+  .about-text {
+    text-align: start;
+    width: 90%;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .text-contain {
-    width: 60%;
     justify-content: center;
     background-color: red;
     align-content: center;
   }
 
-  .sub-text {
-    font-weight: 400;
+  .span-text {
     color: #ff004f;
     font-size: 1.5rem;
     align-self: start;

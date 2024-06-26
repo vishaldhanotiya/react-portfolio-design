@@ -9,27 +9,37 @@ const FirstSection = (props) => {
     <div id="firstSection">
       <div className="background">
         <div className="nav-container">
-          <p className="nav-text">
-            <a href="#firstSection">Home</a>
-          </p>
-          <p className="nav-text">
-            <a href="#secondSection">About me</a>
-          </p>
-          <p className="nav-text">
-            <a href="#thirdSection">My Skills</a>
-          </p>
-          <p className="nav-text">
-            <a href="#fourthSection">Experience</a>
-          </p>
-          <p className="nav-text">
-            <a href="#fifthSection">Achievement</a>
-          </p>
-          <p className="nav-text">
-            <a href="#sixthSection">Blog</a>
-          </p>
-          <p className="nav-text">
-            <a href="#seventhSection">Contact</a>
-          </p>
+          <div className="vd-logo">
+            <img
+              alt="my-logo"
+              width={250}
+              height={50}
+              src={require("../res/logo.gif")}
+            />
+          </div>
+          <div className="nav-menu">
+            <p className="nav-text">
+              <a href="#firstSection">Home</a>
+            </p>
+            <p className="nav-text">
+              <a href="#secondSection">About me</a>
+            </p>
+            <p className="nav-text">
+              <a href="#thirdSection">My Skills</a>
+            </p>
+            <p className="nav-text">
+              <a href="#fourthSection">Experience</a>
+            </p>
+            <p className="nav-text">
+              <a href="#fifthSection">Achievement</a>
+            </p>
+            <p className="nav-text">
+              <a href="#sixthSection">Blog</a>
+            </p>
+            <p className="nav-text">
+              <a href="#seventhSection">Contact</a>
+            </p>
+          </div>
         </div>
         <div className="home-container">
           <div className="name-container">
@@ -45,40 +55,70 @@ const FirstSection = (props) => {
             </p>
             <div className="social-section">
               <span className="circle">
-                <img
-                  alt="github"
-                  src={require("../res/github.png")}
-                  className="img"
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/vishaldhanotiya"
+                >
+                  <img
+                    alt="github"
+                    src={require("../res/github.png")}
+                    className="img"
+                  />
+                </a>
               </span>
               <span className="circle">
-                <img
-                  alt="facebook"
-                  src={require("../res/facebook.png")}
-                  className="img"
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/vishal.dhanotiya.75/"
+                >
+                  <img
+                    alt="facebook"
+                    src={require("../res/facebook.png")}
+                    className="img"
+                  />
+                </a>
               </span>
               <span className="circle">
-                <img
-                  alt="media"
-                  src={require("../res/stackoverflow.png")}
-                  className="img"
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://stackoverflow.com/users/9158543/vishal-dhanotiya"
+                >
+                  <img
+                    alt="media"
+                    src={require("../res/stackoverflow.png")}
+                    className="img"
+                  />
+                </a>
               </span>
               <span className="circle">
-                <img
-                  alt="linkedin"
-                  src={require("../res/linkedin.png")}
-                  className="img"
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://in.linkedin.com/in/vishal-dhanotiya-a7966599"
+                >
+                  <img
+                    alt="linkedin"
+                    src={require("../res/linkedin.png")}
+                    className="img"
+                  />
+                </a>
               </span>
-              <span className="circle">
-                <img
-                  alt="instagram"
-                  src={require("../res/instagram.png")}
-                  className="img"
-                />
-              </span>
+              {/* <span className="circle">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://stackoverflow.com/users/9158543/vishal-dhanotiya"
+                >
+                  <img
+                    alt="instagram"
+                    src={require("../res/instagram.png")}
+                    className="img"
+                  />
+                </a>
+              </span> */}
             </div>
           </div>
           <div>
