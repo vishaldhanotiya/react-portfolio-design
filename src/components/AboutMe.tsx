@@ -25,7 +25,9 @@ export default function SecondSection() {
             <span className="span-text"> HTML</span>,
             <span className="span-text"> CSS</span> and
             <span className="span-text"> TypeScript</span>, pushing the
-            boundaries of what can be achieved. I maintain a perpetual commitment to honing my skills and keeping pace with the ever-evolving landscape of industry trends.
+            boundaries of what can be achieved. I maintain a perpetual
+            commitment to honing my skills and keeping pace with the
+            ever-evolving landscape of industry trends.
             <br></br>
             <br></br>
             <br></br>
