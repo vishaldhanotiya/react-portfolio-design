@@ -3,10 +3,7 @@ import "./MyExperience.scss";
 
 export default function MyExperience() {
   return (
-    <div
-      style={{ marginTop: -50, backgroundColor: "#000000" }}
-      id="fourthSection"
-    >
+    <div style={{ backgroundColor: "#000000" }} id="fourthSection">
       <div className="fourth-section">
         <p className="experience-title">Experience</p>
 

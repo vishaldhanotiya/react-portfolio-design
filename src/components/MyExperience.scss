@@ -11,19 +11,18 @@
 @media (min-width: 360px) and (max-width: 600px) {
   .fourth-section {
     align-items: center;
-    padding-top: 6rem;
-    padding: 6rem;
+    padding: 2rem;
   }
 
   .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .office-logo {
-    width: 25rem;
+    width: 20rem;
   }
   .experience-div {
     display: inline;
@@ -34,16 +33,14 @@
   .company-text {
     font-weight: bold;
     display: flex;
-    align-self: center;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .company-sub-text {
     font-weight: 400;
     display: flex;
-    align-self: center;
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .back-ground {
     background-color: #f519413a;
@@ -58,28 +55,24 @@
   .fourth-section {
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 6rem;
-    padding-left: 6rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
   }
 
-  .fourth-title {
+  .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .office-logo {
-    width: 35rem;
+    width: 25rem;
   }
   .experience-div {
     display: flex;
   }
-  .title-1 {
-    font-weight: bolder;
-    font-size: 3rem;
-    color: #f51940;
-  }
+
   .experience-box {
     margin-left: 1rem;
     flex: 33.33%;
@@ -89,14 +82,14 @@
     display: flex;
     align-self: center;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .company-sub-text {
     font-weight: 400;
     display: flex;
     align-self: center;
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .back-ground {
     background-color: #f519413a;
@@ -115,7 +108,7 @@
     padding-left: 6rem;
   }
 
-  .fourth-title {
+  .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
@@ -128,11 +121,7 @@
   .experience-div {
     display: flex;
   }
-  .title-1 {
-    font-weight: bolder;
-    font-size: 3rem;
-    color: #f51940;
-  }
+
   .experience-box {
     margin-left: 1rem;
     flex: 33.33%;
@@ -168,7 +157,7 @@
     padding-left: 6rem;
   }
 
-  .fourth-title {
+  .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
@@ -181,13 +170,8 @@
   .experience-div {
     display: flex;
   }
-  .title-1 {
-    font-weight: bolder;
-    font-size: 3rem;
-    color: #f51940;
-  }
+
   .experience-box {
-    margin-left: 1rem;
     flex: 33.33%;
   }
   .company-text {

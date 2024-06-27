@@ -8,22 +8,28 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
+  .blog-container {
+    background-color: #000;
+    padding: 10px;
+  }
   .sixth-title {
-    color: #f51940;
-    padding-top: 4rem;
+    color: var(--white);
+    padding: 2rem;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .blog-list {
     justify-content: center;
-    display: inline;
-    margin-inline: 1rem;
+    align-items: center;
+    display: block;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
     grid-template-columns: 30rem 30rem 30rem 30rem;
     list-style: none;
   }
   .blog-text-container {
     margin: 2rem;
-    padding: 0;
+    padding-top: 2rem;
   }
   .blog-title {
     margin-top: 3rem;
@@ -42,19 +48,7 @@
     justify-content: center;
     align-self: center;
   }
-  .blog-button {
-    color: var(--blood-red);
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-    padding-inline: 1rem;
-    padding-block: 0.8rem;
-    border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: var(--blood-red);
-    border-style: solid;
-  }
+
   .blog-image {
     margin: 1.5rem;
     height: 24rem;
@@ -72,11 +66,15 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
+  .blog-container {
+    background-color: #000;
+    padding: 10px;
+  }
   .sixth-title {
-    color: var(--gray);
+    color: var(--white);
     padding-top: 4rem;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .blog-list {
     justify-content: center;
@@ -136,8 +134,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .blog-container {
+    background-color: #000;
+    padding: 10px;
+  }
   .sixth-title {
-    color: var(--gray);
+    color: var(--white);
     padding-top: 4rem;
     font-weight: bold;
     font-size: 2.2rem;
@@ -201,10 +203,14 @@
 /* Big Monitors */
 @media only screen and (min-width: 1281px) {
   .sixth-title {
-    color: white;
+    color: var(--white);
     padding-top: 6rem;
     font-weight: bold;
     font-size: 3rem;
+  }
+  .blog-container {
+    background-color: #000;
+    padding: 10px;
   }
   .blog-list {
     justify-content: center;

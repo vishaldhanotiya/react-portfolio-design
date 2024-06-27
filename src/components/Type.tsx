@@ -8,7 +8,7 @@ const Type = () => {
         strings: [
           "Software Developer",
           "Frontend Developer",
-          "Mobile App developer",
+          "Mobile App Developer",
           "Open Source Contributor",
         ],
         autoStart: true,

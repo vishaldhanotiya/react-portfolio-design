@@ -10,7 +10,8 @@
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
   .seventh-background {
-    background-color: white;
+    padding: 10px;
+    background-color: black;
   }
   .seventh-title {
     color: var(--white);
@@ -23,15 +24,15 @@
     font-size: 1rem;
   }
   .touch-container {
-    display: flex;
+    display: inline;
     justify-content: center;
   }
   .location-margin {
     margin: 2rem;
   }
   .pin-image {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .address-text {
@@ -65,7 +66,7 @@
   }
   .message-input {
     width: 15rem;
-    height: 9rem;
+    height: 5rem;
     padding-inline: 1rem;
     border-left-width: 0rem;
     border-right-width: 0rem;
@@ -83,14 +84,14 @@
   .submit-button {
     color: var(--white);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5rem;
-    background-color: var(--white);
-    padding-inline: 1rem;
+    background-color: #ff004f;
+    width: 17rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;
-    border-color: var(--white);
+    border-color: #ff004f;
     border-style: solid;
   }
 }
@@ -99,7 +100,8 @@
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .seventh-background {
-    background-color: white;
+    padding: 10px;
+    background-color: black;
   }
   .seventh-title {
     color: var(--white);
@@ -172,14 +174,14 @@
   .submit-button {
     color: var(--white);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5rem;
-    background-color: var(--white);
-    padding-inline: 1rem;
+    background-color: #ff004f;
+    width: 17rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;
-    border-color: var(--white);
+    border-color: #ff004f;
     border-style: solid;
   }
 }
@@ -188,7 +190,8 @@
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .seventh-background {
-    background-color: white;
+    padding: 10px;
+    background-color: black;
   }
   .seventh-title {
     color: var(--white);
@@ -211,95 +214,6 @@
     width: 2rem;
     height: 2rem;
   }
-  .address-text {
-    font-size: 0.9rem;
-    color: var(--white);
-  }
-  .name-input {
-    width: 40rem;
-    height: 2.5rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .email-input {
-    color: var(--white);
-    width: 40rem;
-    height: 2.5rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .message-input {
-    width: 40rem;
-    height: 9rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 2rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .submit-container {
-    display: flex;
-    background-color: #ff004f;
-    justify-content: center;
-    align-self: center;
-  }
-  .submit-button {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin-bottom: 5rem;
-    background-color: #ff004f;
-    padding-inline: 1rem;
-
-    border-width: 2px;
-    border-color: var(--white);
-    border-style: solid;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Big Monitors */
-@media only screen and (min-width: 1281px) {
-  .seventh-background {
-    background-color: white;
-  }
-  .seventh-title {
-    color: var(--white);
-    padding-top: 5rem;
-    font-weight: bold;
-    font-size: 2.2rem;
-  }
-  .seventh-subtitle {
-    color: var(--white);
-    font-size: 1rem;
-  }
-  .touch-container {
-    display: flex;
-    justify-content: center;
-  }
-  .location-margin {
-    margin: 2rem;
-  }
-  .pin-image {
-    width: 2rem;
-    height: 2rem;
-  }
-
   .address-text {
     font-size: 0.9rem;
     color: var(--white);
@@ -353,6 +267,96 @@
     margin-bottom: 5rem;
     background-color: #ff004f;
     width: 42rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    border-color: #ff004f;
+    border-style: solid;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Big Monitors */
+@media only screen and (min-width: 1281px) {
+  .seventh-background {
+    padding: 10px;
+    background-color: black;
+  }
+  .seventh-title {
+    color: var(--white);
+    padding-top: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .seventh-subtitle {
+    color: var(--white);
+    font-size: 1rem;
+  }
+  .touch-container {
+    display: flex;
+    justify-content: center;
+  }
+  .location-margin {
+    margin: 2rem;
+  }
+  .pin-image {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .address-text {
+    font-size: 0.9rem;
+    color: var(--white);
+  }
+  .name-input {
+    width: 40rem;
+    height: 2.5rem;
+    padding-inline: 1rem;
+    border-left-width: 0rem;
+    border-right-width: 0rem;
+    border-top-width: 0rem;
+    margin-bottom: 1rem;
+    border-bottom-width: 0.2rem;
+    background-color: var(--white);
+    border-bottom-color: var(--white);
+  }
+  .email-input {
+    color: var(--white);
+    width: 40rem;
+    height: 2.5rem;
+    padding-inline: 1rem;
+    border-left-width: 0rem;
+    border-right-width: 0rem;
+    border-top-width: 0rem;
+    margin-bottom: 1rem;
+    border-bottom-width: 0.2rem;
+    background-color: var(--white);
+    border-bottom-color: var(--white);
+  }
+  .message-input {
+    width: 40rem;
+    height: 9rem;
+    padding-inline: 1rem;
+    border-left-width: 0rem;
+    border-right-width: 0rem;
+    border-top-width: 0rem;
+    margin-bottom: 2rem;
+    border-bottom-width: 0.2rem;
+    background-color: var(--white);
+    border-bottom-color: var(--white);
+  }
+  .submit-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .submit-button {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    background-color: #ff004f;
+    width: 40rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;

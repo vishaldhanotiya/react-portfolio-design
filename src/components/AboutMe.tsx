@@ -11,11 +11,11 @@ export default function SecondSection() {
             className="logo"
           />
         </div>
-        <div className="column">
-          <p className="about-title">
-            About <span className="about-me">Me</span>
-          </p>
+        <div className="text-contain">
           <p className="about-text">
+            <p className="about-title">
+              About <span className="about-me">Me</span>
+            </p>
             My self <span className="span-text">Vishal Dhanotiya</span>. I am a
             Frontend developer. My expertise lies in frontend technologies,
             including <span className="span-text"> React Native</span>,

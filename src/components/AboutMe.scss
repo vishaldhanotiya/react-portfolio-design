@@ -1,7 +1,7 @@
 @import "../res/theme/variable";
 :root {
   --green: #{$green};
-  --gray: #{$gray};
+  --red: #{$red};
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -9,14 +9,13 @@
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
   .about-section {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
     align-items: center;
     display: inline;
   }
   .column {
-    flex: 33.33%;
+    width: 100%;
   }
   .logo {
     height: 25rem;
@@ -24,32 +23,27 @@
 
   .about-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: start;
     color: white;
   }
   .about-me {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
-    color: #f51940;
+    color: var(--red);
   }
 
   .about-text {
-    text-align: start;
-    width: 90%;
+    text-align: justify;
+    margin: 2rem;
     color: var(--white);
     font-size: 1.5rem;
   }
-  .text-contain {
-    justify-content: center;
-    background-color: red;
-    align-content: center;
-  }
 
   .span-text {
-    color: #ff004f;
+    color: var(--red);
     font-size: 1.5rem;
-    align-self: start;
   }
 }
 
@@ -57,14 +51,14 @@
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .about-section {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: space-evenly;
+
     align-items: center;
     display: flex;
   }
   .column {
-    flex: 33.33%;
+    width: 100%;
   }
   .logo {
     height: 25rem;
@@ -72,32 +66,27 @@
 
   .about-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: start;
     color: white;
   }
   .about-me {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #f51940;
+    color: var(--red);
   }
 
   .about-text {
-    text-align: start;
-    width: 90%;
+    text-align: justify;
+    margin: 2rem;
     color: var(--white);
     font-size: 1.5rem;
   }
-  .text-contain {
-    justify-content: center;
-    background-color: red;
-    align-content: center;
-  }
 
   .span-text {
-    color: #ff004f;
+    color: var(--red);
     font-size: 1.5rem;
-    align-self: start;
   }
 }
 
@@ -105,17 +94,17 @@
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .about-section {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: space-evenly;
+
     align-items: center;
     display: flex;
   }
   .column {
-    flex: 33.33%;
+    width: 100%;
   }
   .logo {
-    height: 25rem;
+    height: 35rem;
   }
 
   .about-title {
@@ -125,27 +114,22 @@
     color: white;
   }
   .about-me {
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: #f51940;
+    color: var(--red);
   }
 
   .about-text {
-    text-align: start;
-    width: 90%;
+    text-align: justify;
+    margin: 5rem;
     color: var(--white);
-    font-size: 1.5rem;
-  }
-  .text-contain {
-    justify-content: center;
-    background-color: red;
-    align-content: center;
+    font-size: 2rem;
   }
 
   .span-text {
-    color: #ff004f;
-    font-size: 1.5rem;
-    align-self: start;
+    color: var(--red);
+    font-size: 2rem;
   }
 }
 
@@ -153,17 +137,17 @@
 /* Big Monitors */
 @media only screen and (min-width: 1281px) {
   .about-section {
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
-    justify-content: space-evenly;
+
     align-items: center;
     display: flex;
   }
   .column {
-    flex: 33.33%;
+    width: 100%;
   }
   .logo {
-    height: 25rem;
+    height: 35rem;
   }
 
   .about-title {
@@ -173,26 +157,21 @@
     color: white;
   }
   .about-me {
+    text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: #f51940;
+    color: var(--red);
   }
 
   .about-text {
-    text-align: start;
-    width: 90%;
+    text-align: justify;
+    margin: 5rem;
     color: var(--white);
-    font-size: 1.5rem;
-  }
-  .text-contain {
-    justify-content: center;
-    background-color: red;
-    align-content: center;
+    font-size: 2rem;
   }
 
   .span-text {
-    color: #ff004f;
-    font-size: 1.5rem;
-    align-self: start;
+    color: var(--red);
+    font-size: 2rem;
   }
 }

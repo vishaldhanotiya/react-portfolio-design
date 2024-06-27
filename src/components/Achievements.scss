@@ -1,71 +1,185 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --gray: #{$gray};
   --blood-red: #{$blood-red};
 }
-.fifth-title {
-  color: white;
-  padding-top: 6rem;
-  font-weight: bold;
-  font-size: 3rem;
-}
-.pagination-container {
-  justify-content: center;
-  display: flex;
-}
-.pagination {
-  display: flex;
-  justify-content: center;
-}
-.review-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.left-arrow {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url(../res/left-arrow.png);
-  width: 2rem;
-  height: 2rem;
-  margin-right: 3rem;
-}
-.right-arrow {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url(../res/right-arrow.png);
-  margin-left: 3rem;
-  width: 2rem;
-  height: 2rem;
-}
-.review-text-container {
-  justify-content: center;
-  align-items: center;
-}
-.reviewer-name {
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-}
-.reviewer-review {
-  font-size: 1rem;
-  color: var(--gray);
-}
-.image-container {
-  margin-block: 1rem;
-  display: block;
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Mobile Devices */
+@media (min-width: 360px) and (max-width: 600px) {
+  .fifth-title {
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .achievement-container {
+    padding: 10px;
+    background-color: black;
+  }
+  .pagination-container {
+    justify-content: center;
+    display: flex;
+  }
 
-  justify-content: center;
-  align-items: center;
+  .certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .reviewer-name {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .certificate-name {
+    width: 15rem;
+    border-radius: 1%;
+    height: 10rem;
+  }
 }
-.reviewer-image-item {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 20rem;
-  border-radius: 1%;
-  height: 20rem;
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Tablets iPads (Portrait) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .fifth-title {
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .achievement-container {
+    padding: 10px;
+    background-color: black;
+  }
+  .pagination-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  .certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .reviewer-name {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .certificate-name {
+    width: 15rem;
+    border-radius: 1%;
+    height: 10rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .fifth-title {
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .achievement-container {
+    padding: 10px;
+    background-color: black;
+  }
+  .pagination-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  .certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .reviewer-name {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .certificate-name {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 1%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Big Monitors */
+@media only screen and (min-width: 1281px) {
+  .fifth-title {
+    color: white;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .achievement-container {
+    padding: 10px;
+    background-color: black;
+  }
+  .pagination-container {
+    justify-content: center;
+    display: flex;
+  }
+
+  .certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .reviewer-name {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .certificate-name {
+    width: 35rem;
+    height: 20rem;
+    border-radius: 1%;
+  }
 }

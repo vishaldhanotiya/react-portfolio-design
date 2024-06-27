@@ -26,10 +26,7 @@ const gridImage = [
 
 export default function MyBlogs() {
   return (
-    <div
-      style={{ marginBlock: -40, backgroundColor: "#000000" }}
-      id="sixthSection"
-    >
+    <div className="blog-container" id="sixthSection">
       <p className="sixth-title">My Blog</p>
 
       <div className="blog-list">
@@ -39,10 +36,10 @@ export default function MyBlogs() {
               style={{
                 margin: 15,
                 height: 300,
+                backgroundColor: "#f0f0f0",
                 width: 300,
                 fontWeight: "500",
                 borderRadius: 5,
-                backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),url(${item.value})`,

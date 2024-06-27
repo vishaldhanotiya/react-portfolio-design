@@ -69,51 +69,50 @@ export default function Achievements() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div
-      id="fifthSection"
-      style={{ marginBlock: -50, backgroundColor: "#000000" }}
-    >
+    <div id="fifthSection" className="achievement-container">
       <p className="fifth-title">Achievements</p>
 
-      <div className="review-container">
-        <div
+      <div className="certificate-container">
+        <img
+          alt="left-arrow"
+          src={require("../res/left-arrow.png")}
           onClick={() => {
             if (activeIndex) {
               setActiveIndex(activeIndex - 1);
             }
           }}
-          className="left-arrow"
+          className="arrow"
         />
-        <div className="image-container">
+        <div>
           <img
-            alt="review"
-            className="reviewer-image-item"
+            alt="certificate"
+            className="certificate-name"
             src={gridImage[activeIndex].value}
           />
         </div>
 
-        <div
+        <img
+          alt="right-arrow"
+          src={require("../res/right-arrow.png")}
           onClick={() => {
             if (activeIndex < gridImage.length - 1) {
               setActiveIndex(activeIndex + 1);
             }
           }}
-          className="right-arrow"
+          className="arrow"
         />
       </div>
-      <div className="review-text-container">
+      <div>
         <p className="reviewer-name">{gridImage[activeIndex].text}</p>
       </div>
       <div className="pagination-container">
         {gridImage.map((item, index) => {
           return (
-            <div className="pagination">
+            <div>
               <div
                 style={{
                   height: 10,
                   width: 10,
-                  marginBottom: 80,
-                  marginTop: 45,
                   marginInline: 2,
                   borderRadius: 5,
                   backgroundColor: index === activeIndex ? "pink" : "gray",

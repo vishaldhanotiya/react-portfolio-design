@@ -1,6 +1,7 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
+  --red: #{#ff004f};
 }
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -9,58 +10,31 @@
   .background {
     background-color: #000;
   }
-
-  .nav-container {
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    right: 0;
-    background-color: #000;
-    padding-right: 2rem;
-    justify-content: space-between;
-    position: fixed;
-  }
-  .nav-menu {
-    display: flex;
-  }
-
-  .nav-text {
-    padding: 1rem 1rem 0.5rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
-    :hover {
-      color: #ff004f;
-    }
-  }
-
   .home-container {
-    display: inline;
-    flex-direction: row;
-    height: 42rem;
-    padding-top: 8rem;
+    padding-top: 10rem;
     justify-content: space-around;
     align-items: center;
   }
+
+  .my-photo {
+    margin-left: 2rem;
+    width: 25rem;
+    height: 25rem;
+  }
+
   .name-container {
     display: inline;
     flex-direction: column;
   }
-  .my-photo {
-    height: 20rem;
-  }
-
   .hi-text {
     font-weight: bold;
     color: var(--white);
-    font-size: 3rem;
-    text-align: left;
+    font-size: 2rem;
   }
   .name-text {
     font-weight: bold;
     color: #ff004f;
-    font-size: 3rem;
+    font-size: 2rem;
     align-self: start;
   }
   .sub-text {
@@ -104,14 +78,15 @@
 
   .social-section {
     display: flex;
-    justify-content: space-evenly;
+    margin-block: 2rem;
+    justify-content: center;
   }
   .circle {
-    width: 32px; /* Set the desired width */
-    height: 32px; /* Set the desired height */
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
     border-radius: 50%; /* Make the div a circle */
     display: flex;
-
+    margin: 1rem;
     align-items: center;
     justify-content: center;
     border-width: 1.5px;
@@ -134,35 +109,6 @@
     background-color: #000;
   }
 
-  .nav-container {
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    right: 0;
-    background-color: #000;
-    padding-right: 2rem;
-    justify-content: space-between;
-    position: fixed;
-  }
-  .nav-menu {
-    display: flex;
-  }
-  .vd-logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-left: 5rem;
-  }
-  .nav-text {
-    padding: 1rem 1rem 0.5rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
-    :hover {
-      color: #ff004f;
-    }
-  }
-
   .home-container {
     display: flex;
     flex-direction: row;
@@ -173,31 +119,28 @@
   }
   .name-container {
     display: flex;
-    padding-left: 12rem;
+    padding-left: 5rem;
     flex-direction: column;
   }
   .my-photo {
-    height: 38rem;
-    margin-right: -10rem;
-  }
-  .vd-logo {
+    height: 30rem;
   }
   .hi-text {
     font-weight: bold;
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
   .name-text {
     font-weight: bold;
     color: #ff004f;
-    font-size: 3rem;
+    font-size: 2.5rem;
     align-self: start;
   }
   .sub-text {
     font-weight: bold;
     color: #ff004f;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-self: start;
   }
 
@@ -235,7 +178,6 @@
 
   .social-section {
     display: flex;
-    width: 60%;
     justify-content: space-around;
   }
   .circle {
@@ -265,36 +207,6 @@
   .background {
     background-color: #000;
   }
-
-  .nav-container {
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    right: 0;
-    background-color: #000;
-    padding-right: 2rem;
-    justify-content: space-between;
-    position: fixed;
-  }
-  .nav-menu {
-    display: flex;
-  }
-  .vd-logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-left: 5rem;
-  }
-  .nav-text {
-    padding: 1rem 1rem 0.5rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
-    :hover {
-      color: #ff004f;
-    }
-  }
-
   .home-container {
     display: flex;
     flex-direction: row;
@@ -305,31 +217,29 @@
   }
   .name-container {
     display: flex;
-    padding-left: 12rem;
+    padding-left: 8rem;
     flex-direction: column;
   }
   .my-photo {
-    height: 38rem;
-    margin-right: -10rem;
-  }
-  .vd-logo {
+    height: 35rem;
+    width: 35rem;
   }
   .hi-text {
     font-weight: bold;
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
   .name-text {
     font-weight: bold;
     color: #ff004f;
-    font-size: 3rem;
+    font-size: 2.5rem;
     align-self: start;
   }
   .sub-text {
     font-weight: bold;
     color: #ff004f;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-self: start;
   }
 
@@ -367,7 +277,6 @@
 
   .social-section {
     display: flex;
-    width: 60%;
     justify-content: space-around;
   }
   .circle {
@@ -398,35 +307,6 @@
     background-color: #000;
   }
 
-  .nav-container {
-    display: flex;
-    z-index: 1;
-    width: 100%;
-    right: 0;
-    background-color: #000;
-    padding-right: 2rem;
-    justify-content: space-between;
-    position: fixed;
-  }
-  .nav-menu {
-    display: flex;
-  }
-  .vd-logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
-    padding-left: 5rem;
-  }
-  .nav-text {
-    padding: 1rem 1rem 0.5rem 1rem;
-    text-align: center;
-    font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
-    :hover {
-      color: #ff004f;
-    }
-  }
-
   .home-container {
     display: flex;
     flex-direction: row;
@@ -435,17 +315,17 @@
     justify-content: space-around;
     align-items: center;
   }
+
   .name-container {
     display: flex;
-    padding-left: 12rem;
+    padding-left: 8rem;
     flex-direction: column;
   }
   .my-photo {
-    height: 38rem;
-    margin-right: -10rem;
+    height: 40rem;
+    width: 50rem;
   }
-  .vd-logo {
-  }
+
   .hi-text {
     font-weight: bold;
     color: var(--white);
@@ -454,13 +334,13 @@
   }
   .name-text {
     font-weight: bold;
-    color: #ff004f;
+    color: var(--red);
     font-size: 3rem;
     align-self: start;
   }
   .sub-text {
     font-weight: bold;
-    color: #ff004f;
+    color: var(--red);
     font-size: 2rem;
     align-self: start;
   }
@@ -503,14 +383,9 @@
     justify-content: space-around;
   }
   .circle {
-    width: 32px; /* Set the desired width */
-    height: 32px; /* Set the desired height */
-    border-radius: 50%; /* Make the div a circle */
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    border-width: 1.5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
     border-color: var(--white);
     border-style: solid;
   }
@@ -518,7 +393,6 @@
     width: 25px;
     height: 25px;
     margin-top: 0.3rem;
-    align-self: center;
     background-size: contain;
   }
 }
