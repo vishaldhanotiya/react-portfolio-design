@@ -23,10 +23,7 @@
   .nav-menu {
     display: flex;
   }
-  .vd-logo {
-    padding-top: 1rem;
-    padding-left: 5rem;
-  }
+
   .nav-text {
     padding: 1rem 1rem 0.5rem 1rem;
     text-align: center;
@@ -42,18 +39,16 @@
     display: inline;
     flex-direction: row;
     height: 42rem;
-    padding-top: 6rem;
+    padding-top: 8rem;
     justify-content: space-around;
     align-items: center;
   }
   .name-container {
-    display: flex;
-    padding-left: 12rem;
+    display: inline;
     flex-direction: column;
   }
   .my-photo {
-    height: 30rem;
-    margin-right: -10rem;
+    height: 20rem;
   }
 
   .hi-text {
@@ -109,8 +104,7 @@
 
   .social-section {
     display: flex;
-    width: 60%;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .circle {
     width: 32px; /* Set the desired width */
