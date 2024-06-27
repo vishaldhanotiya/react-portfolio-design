@@ -27,9 +27,7 @@
   .experience-div {
     display: inline;
   }
-  .experience-box {
-    flex: 33.33%;
-  }
+
   .company-text {
     font-weight: bold;
     display: flex;
@@ -73,10 +71,6 @@
     display: flex;
   }
 
-  .experience-box {
-    margin-left: 1rem;
-    flex: 33.33%;
-  }
   .company-text {
     font-weight: bold;
     display: flex;
@@ -119,13 +113,11 @@
     width: 35rem;
   }
   .experience-div {
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.8fr 1fr;
   }
 
-  .experience-box {
-    margin-left: 1rem;
-    flex: 33.33%;
-  }
   .company-text {
     font-weight: bold;
     display: flex;
@@ -168,7 +160,9 @@
     width: 35rem;
   }
   .experience-div {
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.8fr 1fr;
   }
 
   .experience-box {

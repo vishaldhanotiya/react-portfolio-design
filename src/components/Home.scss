@@ -110,8 +110,9 @@
   }
 
   .home-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.3fr;
     height: 42rem;
     padding-top: 6rem;
     justify-content: space-around;
@@ -124,6 +125,7 @@
   }
   .my-photo {
     height: 30rem;
+    width: 30rem;
   }
   .hi-text {
     font-weight: bold;
@@ -308,12 +310,12 @@
   }
 
   .home-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.3fr;
     height: 42rem;
     padding-top: 6rem;
     justify-content: space-around;
-    align-items: center;
   }
 
   .name-container {
@@ -329,13 +331,13 @@
   .hi-text {
     font-weight: bold;
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
   .name-text {
     font-weight: bold;
     color: var(--red);
-    font-size: 3rem;
+    font-size: 2.5rem;
     align-self: start;
   }
   .sub-text {

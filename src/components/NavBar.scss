@@ -19,6 +19,15 @@
     display: none;
     padding-right: 1rem;
   }
+  .nav-menu-open {
+    display: inline;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3rem;
+    padding-top: 10rem;
+    background-color: rgba(#000, 0.85);
+    position: absolute;
+  }
   .my-logo {
     width: 10rem;
     height: 2.5rem;
@@ -41,6 +50,10 @@
     :hover {
       color: var(--red);
     }
+  }
+  .menu-div {
+    margin-top: 10rem;
+    position: absolute;
   }
 }
 
@@ -59,18 +72,27 @@
     display: none;
     padding-right: 3rem;
   }
+  .nav-menu-open {
+    display: inline;
+    margin-top: 3rem;
+    padding-top: 10rem;
+    position: absolute;
+    background-color: rgba(#000, 0.85);
+    width: 100vw;
+    height: 100vh;
+  }
   .my-logo {
     width: 10rem;
     height: 2.5rem;
-    margin-left: 1rem;
-    padding-top: 0.5rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
   }
   .menu-logo {
     display: flex;
     width: 2rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     height: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
   .nav-text {
     padding: 1rem 1rem 0rem 1rem;
@@ -81,6 +103,9 @@
     :hover {
       color: var(--red);
     }
+  }
+  .menu-div {
+    position: absolute;
   }
 }
 
@@ -99,6 +124,12 @@
     display: flex;
     padding-right: 3rem;
   }
+  .nav-menu-open {
+    display: inline;
+    margin-top: 10rem;
+    width: 100vw;
+    height: 100vh;
+  }
   .my-logo {
     width: 14rem;
     height: 3rem;
@@ -108,8 +139,8 @@
   .menu-logo {
     display: none;
     width: 2rem;
-    margin-right: 1rem;
     height: 2rem;
+    margin-right: 1rem;
     padding-top: 0.5rem;
   }
   .nav-text {
@@ -121,6 +152,11 @@
     :hover {
       color: var(--red);
     }
+  }
+
+  .menu-div {
+    position: absolute;
+    margin-top: 10rem;
   }
 }
 
@@ -131,13 +167,21 @@
     display: flex;
     z-index: 1;
     width: 100vw;
-    background-color: #000;
     justify-content: space-between;
     position: fixed;
+    background-color: #000;
   }
   .nav-menu {
     display: flex;
     padding-right: 3rem;
+  }
+  .nav-menu-open {
+    display: inline;
+    margin-top: 5rem;
+    background-color: rgba(#000, 0.85);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
   }
   .my-logo {
     width: 15rem;
@@ -148,8 +192,8 @@
   .menu-logo {
     display: none;
     width: 2rem;
-    margin-right: 1rem;
     height: 2rem;
+    margin-right: 1rem;
     padding-top: 0.5rem;
   }
   .nav-text {
@@ -161,5 +205,9 @@
     :hover {
       color: var(--red);
     }
+  }
+  .menu-div {
+    position: absolute;
+    margin-top: 10rem;
   }
 }

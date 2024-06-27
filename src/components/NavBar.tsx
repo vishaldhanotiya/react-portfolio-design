@@ -1,9 +1,41 @@
-//import liraries
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../components/NavBar.scss";
 
-// create a component
 const NavBar = () => {
+  const useWindowSize = () => {
+    const [windowSize, setWindowSize] = useState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
+    return windowSize;
+  };
+
+  const { width } = useWindowSize();
+  useEffect(() => {
+    if (width > 1000) {
+      setShowMenu(false);
+    }
+    console.log(width);
+  }, [width]);
+
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <header>
       <nav className="nav-container">
@@ -12,33 +44,38 @@ const NavBar = () => {
           alt="my-logo"
           src={require("../res/logo.gif")}
         />
-        <div className="nav-menu">
-          <p className="nav-text">
+        <div className={showMenu ? "nav-menu-open" : "nav-menu"}>
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#firstSection">Home</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#secondSection">About me</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#thirdSection">My Skills</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#fourthSection">Experience</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#fifthSection">Achievement</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#sixthSection">Blog</a>
           </p>
-          <p className="nav-text">
+          <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#seventhSection">Contact</a>
           </p>
         </div>
         <img
-          alt="my-logo"
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+          alt="menu-logo"
           className="menu-logo"
-          src={require("../res/menu.png")}
+          src={
+            showMenu ? require("../res/close.png") : require("../res/menu.png")
+          }
         />
       </nav>
     </header>

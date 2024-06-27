@@ -8,7 +8,7 @@ export default function MyExperience() {
         <p className="experience-title">Experience</p>
 
         <div className="experience-div">
-          <div className="experience-box">
+          <div>
             <div className="back-ground">
               <span className="company-text">{"Persistent Systems"}</span>
               <span className="company-sub-text">{"Engineering Lead"}</span>
@@ -46,7 +46,7 @@ export default function MyExperience() {
               <span className="company-sub-text">{"Dec 2015 - Feb 2016"}</span>
             </div>
           </div>
-          <div className="experience-box">
+          <div>
             <img
               alt="office"
               src={require("../res/office.png")}

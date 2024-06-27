@@ -14,9 +14,7 @@
     align-items: center;
     display: inline;
   }
-  .column {
-    width: 100%;
-  }
+
   .logo {
     height: 25rem;
   }
@@ -26,12 +24,9 @@
     font-size: 2rem;
     text-align: start;
     color: white;
-  }
-  .about-me {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--red);
+    span {
+      color: var(--red);
+    }
   }
 
   .about-text {
@@ -39,11 +34,9 @@
     margin: 2rem;
     color: var(--white);
     font-size: 1.5rem;
-  }
-
-  .span-text {
-    color: var(--red);
-    font-size: 1.5rem;
+    span {
+      color: var(--red);
+    }
   }
 }
 
@@ -53,13 +46,10 @@
   .about-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-
     align-items: center;
     display: flex;
   }
-  .column {
-    width: 100%;
-  }
+
   .logo {
     height: 25rem;
   }
@@ -69,12 +59,9 @@
     font-size: 2.5rem;
     text-align: start;
     color: white;
-  }
-  .about-me {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--red);
+    span {
+      color: var(--red);
+    }
   }
 
   .about-text {
@@ -82,11 +69,9 @@
     margin: 2rem;
     color: var(--white);
     font-size: 1.5rem;
-  }
-
-  .span-text {
-    color: var(--red);
-    font-size: 1.5rem;
+    span {
+      color: var(--red);
+    }
   }
 }
 
@@ -96,12 +81,8 @@
   .about-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-
     align-items: center;
     display: flex;
-  }
-  .column {
-    width: 100%;
   }
   .logo {
     height: 35rem;
@@ -109,27 +90,22 @@
 
   .about-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: start;
     color: white;
-  }
-  .about-me {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--red);
+    span {
+      color: var(--red);
+    }
   }
 
   .about-text {
     text-align: justify;
     margin: 5rem;
     color: var(--white);
-    font-size: 2rem;
-  }
-
-  .span-text {
-    color: var(--red);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    span {
+      color: var(--red);
+    }
   }
 }
 
@@ -139,39 +115,36 @@
   .about-section {
     padding-top: 3rem;
     padding-bottom: 3rem;
-
+    display: grid;
     align-items: center;
-    display: flex;
+    gap: 50px;
+    grid-template-columns: 0.5fr 1.5fr;
   }
-  .column {
-    width: 100%;
-  }
+
   .logo {
     height: 35rem;
   }
 
   .about-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: start;
     color: white;
-  }
-  .about-me {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--red);
+    span {
+      color: var(--red);
+    }
   }
 
   .about-text {
     text-align: justify;
     margin: 5rem;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    span {
+      color: var(--red);
+    }
   }
-
-  .span-text {
-    color: var(--red);
-    font-size: 2rem;
+  .text-contain {
+    text-align: center;
   }
 }
