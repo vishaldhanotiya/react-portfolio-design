@@ -1,6 +1,6 @@
 import React from "react";
-import "../components/ThirdSection.scss";
-export default function ThirdSection() {
+import "../components/Skills.scss";
+export default function Skills() {
   return (
     <div id="thirdSection" className="main-background">
       <p className="skill-title">Skils</p>

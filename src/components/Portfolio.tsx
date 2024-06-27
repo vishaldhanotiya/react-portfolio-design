@@ -1,24 +1,24 @@
 import React from "react";
-import FirstSection from "../components/FirstSection.tsx";
-import FifthSection from "./FifthSection.tsx";
-import FourthSection from "./FourthSection.tsx";
-import SecondSection from "./SecondSection.tsx";
-import SeventhSection from "./SeventhSection.tsx";
-import SixthSection from "./SixthSection.tsx";
-import ThirdSection from "./ThirdSection.tsx";
+import Home from "./Home.tsx";
+import Achievements from "./Achievements.tsx";
+import MyExperience from "./MyExperience.tsx";
+import AboutMe from "./AboutMe.tsx";
+import ContactUs from "./ContactUs.tsx";
+import MyBlogs from "./MyBlogs.tsx";
+import Skills from "./Skills.tsx";
 
 const Portfolio = (props) => {
   return (
     <div>
-      <FirstSection {...props} />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
+      <Home {...props} />
+      <AboutMe />
+      <Skills />
+      <MyExperience />
+      <Achievements />
 
-      <SixthSection />
+      <MyBlogs />
 
-      <SeventhSection />
+      <ContactUs />
     </div>
   );
 };

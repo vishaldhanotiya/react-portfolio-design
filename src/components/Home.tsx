@@ -1,8 +1,8 @@
 import React from "react";
-import "../components/FirstSection.scss";
+import "../components/Home.scss";
 import Type from "./Type.tsx";
 
-const FirstSection = (props) => {
+const Home = (props) => {
   // Create reference to store the DOM element containing the animation
 
   return (
@@ -134,4 +134,4 @@ const FirstSection = (props) => {
   );
 };
 
-export default FirstSection;
+export default Home;

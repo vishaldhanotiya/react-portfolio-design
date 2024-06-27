@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FifthSection.scss";
+import "./Achievements.scss";
 const gridImage = [
   {
     id: 1,
@@ -65,7 +65,7 @@ const gridImage = [
   },
 ];
 
-export default function FifthSection() {
+export default function Achievements() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (

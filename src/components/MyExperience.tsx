@@ -1,7 +1,7 @@
 import React from "react";
-import "./FourthSection.scss";
+import "./MyExperience.scss";
 
-export default function FourthSection() {
+export default function MyExperience() {
   return (
     <div
       style={{ marginTop: -50, backgroundColor: "#000000" }}

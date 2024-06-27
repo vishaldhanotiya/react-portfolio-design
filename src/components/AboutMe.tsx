@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/SecondSection.scss";
+import "../components/AboutMe.scss";
 export default function SecondSection() {
   return (
     <div style={{ backgroundColor: "#000000" }} id="secondSection">

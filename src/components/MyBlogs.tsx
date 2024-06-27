@@ -1,5 +1,5 @@
 import React from "react";
-import "./SixthSection.scss";
+import "./MyBlogs.scss";
 const gridImage = [
   {
     text: "What is React Native?",
@@ -24,7 +24,7 @@ const gridImage = [
   },
 ];
 
-export default function SixthSection() {
+export default function MyBlogs() {
   return (
     <div
       style={{ marginBlock: -40, backgroundColor: "#000000" }}

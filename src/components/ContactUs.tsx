@@ -1,6 +1,6 @@
 import React from "react";
-import "./SeventhSection.scss";
-export default function SeventhSection() {
+import "./ContactUs.scss";
+export default function ContactUs() {
   return (
     <div
       style={{ backgroundColor: "#000000" }}
