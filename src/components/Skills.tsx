@@ -78,11 +78,6 @@ export default function Skills() {
           className="skill-image"
         />
         <img
-          alt="img13"
-          src={require("../res/swagger.png")}
-          className="skill-image"
-        />
-        <img
           alt="img14"
           src={require("../res/git.png")}
           className="skill-image"
