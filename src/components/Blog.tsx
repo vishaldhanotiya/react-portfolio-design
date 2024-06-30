@@ -1,5 +1,5 @@
 import React from "react";
-import "./MyBlogs.scss";
+import "./Blog.scss";
 const gridImage = [
   {
     text: "What is React Native?",
@@ -26,8 +26,8 @@ const gridImage = [
 
 export default function MyBlogs() {
   return (
-    <div className="blog-container" id="sixthSection">
-      <p className="sixth-title">My Blog</p>
+    <div className="blog-container" id="blog">
+      <p className="sixth-title">Blog</p>
 
       <div className="blog-list">
         {gridImage.map((item, index) => {

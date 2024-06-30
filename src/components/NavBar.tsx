@@ -46,25 +46,25 @@ const NavBar = () => {
         />
         <div className={showMenu ? "nav-menu-open" : "nav-menu"}>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#firstSection">Home</a>
+            <a href="#home">Home</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#secondSection">About me</a>
+            <a href="#aboutMe">About me</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#thirdSection">My Skills</a>
+            <a href="#skills">Skills</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#fourthSection">Experience</a>
+            <a href="#experience">Experience</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#fifthSection">Achievement</a>
+            <a href="#achievement">Achievement</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#sixthSection">Blog</a>
+            <a href="#blog">Blog</a>
           </p>
           <p onClick={() => setShowMenu(false)} className="nav-text">
-            <a href="#seventhSection">Contact</a>
+            <a href="#contact">Contact</a>
           </p>
         </div>
         <img

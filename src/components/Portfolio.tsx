@@ -1,10 +1,10 @@
 import React from "react";
 import Home from "./Home.tsx";
-import Achievements from "./Achievements.tsx";
-import MyExperience from "./MyExperience.tsx";
+import Achievement from "./Achievement.tsx";
+import Experience from "./Experience.tsx";
 import AboutMe from "./AboutMe.tsx";
-import ContactUs from "./ContactUs.tsx";
-import MyBlogs from "./MyBlogs.tsx";
+import Contact from "./Contact.tsx";
+import Blog from "./Blog.tsx";
 import Skills from "./Skills.tsx";
 import NavBar from "./NavBar.tsx";
 
@@ -15,12 +15,10 @@ const Portfolio = (props) => {
       <Home {...props} />
       <AboutMe />
       <Skills />
-      <MyExperience />
-      <Achievements />
-
-      <MyBlogs />
-
-      <ContactUs />
+      <Experience />
+      <Achievement />
+      <Blog />
+      <Contact />
     </div>
   );
 };

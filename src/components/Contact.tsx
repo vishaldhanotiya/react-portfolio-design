@@ -1,9 +1,9 @@
 import React from "react";
-import "./ContactUs.scss";
+import "./Contact.scss";
 export default function ContactUs() {
   return (
-    <div id="seventhSection" className="seventh-background">
-      <p className="seventh-title">Let's Get In Touch</p>
+    <div id="contact" className="seventh-background">
+      <h3 className="seventh-title">Let's Get In Touch</h3>
 
       <div className="touch-container">
         <div className="location-margin">

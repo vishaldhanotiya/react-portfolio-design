@@ -2,7 +2,7 @@ import React from "react";
 import "../components/AboutMe.scss";
 export default function SecondSection() {
   return (
-    <div style={{ backgroundColor: "#000000" }} id="secondSection">
+    <div style={{ backgroundColor: "#000000" }} id="aboutMe">
       <div className="about-section">
         <img
           alt="about-me"
@@ -11,11 +11,11 @@ export default function SecondSection() {
         />
         <div className="text-contain">
           <p className="about-text">
-            <p className="about-title">
+            <h3 className="about-title">
               About <span className="about-me">Me</span>
-            </p>
+            </h3>
             My self <span>Vishal Dhanotiya</span>. I am a Frontend developer. My
-            expertise lies in frontend technologies, including{" "}
+            expertise lies in frontend technologies, including
             <span> React Native</span>,<span> React.js</span>, and
             <span> JavaScript</span>. Currently, I'm deeply engaged with
             <span> HTML</span>,<span> CSS</span> and

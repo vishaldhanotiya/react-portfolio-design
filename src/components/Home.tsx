@@ -3,10 +3,8 @@ import "../components/Home.scss";
 import Type from "./Type.tsx";
 
 const Home = () => {
-  // Create reference to store the DOM element containing the animation
-
   return (
-    <div id="firstSection">
+    <div id="home">
       <div className="background">
         <div className="home-container">
           <div className="name-container">

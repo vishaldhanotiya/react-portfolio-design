@@ -1,11 +1,11 @@
 import React from "react";
-import "./MyExperience.scss";
+import "./Experience.scss";
 
 export default function MyExperience() {
   return (
-    <div style={{ backgroundColor: "#000000" }} id="fourthSection">
+    <div style={{ backgroundColor: "#000000" }} id="experience">
       <div className="fourth-section">
-        <p className="experience-title">Experience</p>
+        <h3 className="experience-title">Experience</h3>
 
         <div className="experience-div">
           <div>

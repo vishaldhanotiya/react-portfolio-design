@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Achievements.scss";
+import "./Achievement.scss";
 const gridImage = [
   {
     id: 1,
@@ -70,7 +70,7 @@ export default function Achievements() {
 
   return (
     <div id="fifthSection" className="achievement-container">
-      <p className="fifth-title">Achievements</p>
+      <p className="fifth-title">Achievement</p>
 
       <div className="certificate-container">
         <img
