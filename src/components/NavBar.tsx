@@ -39,11 +39,7 @@ const NavBar = () => {
   return (
     <header>
       <nav className="nav-container">
-        <img
-          className="my-logo"
-          alt="my-logo"
-          src={require("../res/logo.gif")}
-        />
+        <img className="my-logo" alt="my-logo" src={require("../res/11.png")} />
         <div className={showMenu ? "nav-menu-open" : "nav-menu"}>
           <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#home">Home</a>
