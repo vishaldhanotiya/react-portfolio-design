@@ -1,7 +1,7 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --gray: #{$gray};
+  --black: #{#000};
   --blood-red: #{$blood-red};
 }
 
@@ -11,7 +11,8 @@
 @media (min-width: 360px) and (max-width: 600px) {
   .fourth-section {
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
+    background-color: var(--black);
   }
 
   .experience-title {
@@ -53,14 +54,15 @@
   .fourth-section {
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 4rem;
-    padding-left: 4rem;
+    padding-top: 3rem;
+    background-color: var(--black);
   }
 
   .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
+    padding-left: 4rem;
     font-size: 2.5rem;
   }
 
@@ -69,9 +71,12 @@
   }
   .experience-div {
     display: flex;
+    padding-left: 4rem;
   }
 
   .company-text {
+    text-align: left;
+
     font-weight: bold;
     display: flex;
     align-self: center;
@@ -98,15 +103,16 @@
   .fourth-section {
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 6rem;
-    padding-left: 6rem;
+    padding-top: 2rem;
+    background-color: var(--black);
   }
 
   .experience-title {
     color: white;
     text-align: left;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding-left: 4rem;
   }
 
   .office-logo {
@@ -114,6 +120,7 @@
   }
   .experience-div {
     display: grid;
+    padding-left: 4rem;
     align-items: center;
     grid-template-columns: 0.8fr 1fr;
   }
@@ -145,15 +152,17 @@
   .fourth-section {
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 6rem;
-    padding-left: 6rem;
+    background-color: var(--black);
+    padding-top: 2rem;
   }
 
   .experience-title {
     color: white;
+    padding-left: 6rem;
+
     text-align: left;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .office-logo {
@@ -161,16 +170,15 @@
   }
   .experience-div {
     display: grid;
+    padding-left: 6rem;
     align-items: center;
     grid-template-columns: 0.8fr 1fr;
   }
 
-  .experience-box {
-    flex: 33.33%;
-  }
   .company-text {
     font-weight: bold;
     display: flex;
+    margin-bottom: 0.4rem;
     align-self: center;
     color: var(--white);
     font-size: 1.5rem;

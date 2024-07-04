@@ -1,40 +1,39 @@
 import React from "react";
-import "./Contact.scss";
-export default function ContactUs() {
+import "../components/Contact.scss";
+
+const Contact = () => {
   return (
-    <div id="contact" className="seventh-background">
-      <h3 className="seventh-title">Let's Get In Touch</h3>
-
-      <div className="touch-container">
-        <div className="location-margin">
+    <section id="contact" className="contact-container">
+      <div>
+        <h1 className="contact-title">Contact Me!</h1>
+        <div className="detail">
           <img
-            alt="location"
-            src={require("../res/pin.png")}
-            className="pin-image"
+            alt="email-icon"
+            src={require("../res/email-marketing.png")}
+            className="email-icon"
           />
-
-          <p className="address-text">India</p>
+          <div className="text-div">
+            <span className="detail-title">Mail</span>
+            <br></br>
+            <span className="detail-value">vishal.dhanotiya2@gmail.com</span>
+          </div>
         </div>
-        <div className="location-margin">
-          <img
-            src={require("../res/email.png")}
-            alt="pin"
-            className="pin-image"
-          />
 
-          <p className="address-text">vishal.dhanotiya2@gmail.com</p>
-        </div>
-        <div className="location-margin">
+        <div className="detail">
           <img
-            src={require("../res/call.png")}
-            alt="email"
-            className="pin-image"
+            alt="location-icon"
+            src={require("../res/geography.png")}
+            className="location-icon"
           />
-
-          <p className="address-text">9179237008</p>
+          <div className="text-div">
+            <span className="detail-title">Location</span>
+            <br></br>
+            <span className="detail-value">Indore, India</span>
+          </div>
         </div>
       </div>
-      <div style={{ display: "block", justifyContent: "center" }}>
+
+      <div>
         <input placeholder="Name" className="name-input" />
         <br />
         <input placeholder="Email" className="email-input" />
@@ -44,6 +43,8 @@ export default function ContactUs() {
           <div className="submit-button">{"Submit"}</div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Contact;

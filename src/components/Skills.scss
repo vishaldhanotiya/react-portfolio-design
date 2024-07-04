@@ -1,7 +1,6 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --gray: #{$gray};
   --black: #{$black};
 }
 /* Extra small devices (phones, 600px and down) */
@@ -10,13 +9,12 @@
 @media (min-width: 360px) and (max-width: 600px) {
   .main-background {
     display: flex;
-    padding: 2rem;
-    margin-top: -35px;
     flex-direction: column;
     background-color: var(--black);
   }
 
   .skill-title {
+    padding-inline: 3rem;
     font-weight: bold;
     font-size: 2rem;
     text-align: start;
@@ -106,14 +104,16 @@
 @media only screen and (min-width: 1281px) {
   .main-background {
     display: flex;
-    padding: 6rem;
+    padding-top: 5rem;
     flex-direction: column;
+    box-sizing: border-box;
     background-color: var(--black);
   }
 
   .skill-title {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding-left: 6rem;
     text-align: start;
     color: white;
   }
@@ -125,7 +125,7 @@
   }
   .lang-title {
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--white);
   }

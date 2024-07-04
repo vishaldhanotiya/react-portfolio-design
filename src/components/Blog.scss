@@ -1,7 +1,6 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --gray: #{$gray};
   --blood-red: #{$blood-red};
 }
 /* Extra small devices (phones, 600px and down) */
@@ -11,55 +10,79 @@
   .blog-container {
     background-color: #000;
     padding: 10px;
-  }
-  .sixth-title {
-    color: var(--white);
-    padding: 2rem;
-    font-weight: bold;
-    font-size: 2rem;
+    box-sizing: border-box;
   }
   .blog-list {
+    padding-top: 3rem;
     justify-content: center;
-    align-items: center;
-    display: block;
-    padding-bottom: 5rem;
-    padding-left: 1.5rem;
-    grid-template-columns: 30rem 30rem 30rem 30rem;
-    list-style: none;
-  }
-  .blog-text-container {
-    margin: 2rem;
-    padding-top: 2rem;
+    display: grid;
+    box-sizing: border-box;
   }
   .blog-title {
-    margin-top: 3rem;
+    color: var(--white);
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .blog-text {
+    padding-inline: 2rem;
     color: var(--white);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-
-  .blog-content {
-    margin-top: 3rem;
-    font-size: 0.8rem;
+  .blog-sub-text {
+    padding-inline: 2rem;
+    margin-bottom: auto;
     color: var(--white);
-  }
-  .blog-button-container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    font-size: 0.8rem;
   }
 
-  .blog-image {
-    margin: 1.5rem;
-    height: 24rem;
-    width: 20rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 2rem;
-    background-repeat: no-repeat;
+  .blog-image1 {
+    align-content: flex-end;
+    height: 18rem;
+    width: 18rem;
+    margin-bottom: 2rem;
+
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/react-native.png") no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+  }
+  .blog-image2 {
+    align-content: flex-end;
+    margin-bottom: 2rem;
+
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image3 {
+    align-content: flex-end;
+    margin-bottom: 2rem;
+
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/expo-cli.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image4 {
+    align-content: flex-end;
+    margin-bottom: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -69,65 +92,77 @@
   .blog-container {
     background-color: #000;
     padding: 10px;
-  }
-  .sixth-title {
-    color: var(--white);
-    padding-top: 4rem;
-    font-weight: bold;
-    font-size: 3rem;
+    box-sizing: border-box;
   }
   .blog-list {
-    justify-content: center;
-    display: flex;
-    margin-inline: 1rem;
-    grid-template-columns: 30rem 30rem 30rem 30rem;
-    list-style: none;
-  }
-  .blog-text-container {
-    margin: 2rem;
-    padding: 0;
+    padding-top: 4rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
   }
   .blog-title {
-    margin-top: 3rem;
+    color: var(--white);
+    padding-top: 6rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .blog-text {
+    padding-inline: 2rem;
+
     color: var(--white);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .blog-sub-text {
+    padding-inline: 2rem;
+    margin-bottom: auto;
+    color: var(--white);
+    font-size: 0.8rem;
   }
 
-  .blog-content {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: var(--white);
-  }
-  .blog-button-container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  .blog-button {
-    color: var(--blood-red);
-    font-weight: 500;
-    font-size: 0.9rem;
+  .blog-image1 {
     margin: 2rem;
-    margin-bottom: 4rem;
-    padding-inline: 1rem;
-    padding-block: 0.8rem;
+    height: 18rem;
+    width: 18rem;
+    align-content: flex-end;
     border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: var(--blood-red);
-    border-style: solid;
-  }
-  .blog-image {
-    margin: 1.5rem;
-    height: 24rem;
-    width: 20rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 2rem;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/react-native.png") no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+  }
+  .blog-image2 {
+    align-content: flex-end;
+    margin: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image3 {
+    align-content: flex-end;
+    margin: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/expo-cli.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image4 {
+    align-content: flex-end;
+    margin: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -137,130 +172,154 @@
   .blog-container {
     background-color: #000;
     padding: 10px;
-  }
-  .sixth-title {
-    color: var(--white);
-    padding-top: 4rem;
-    font-weight: bold;
-    font-size: 2.2rem;
+    box-sizing: border-box;
   }
   .blog-list {
+    padding-top: 6rem;
     justify-content: center;
     display: flex;
-    margin-inline: 1rem;
-    grid-template-columns: 30rem 30rem 30rem 30rem;
-    list-style: none;
-  }
-  .blog-text-container {
-    margin: 2rem;
-    padding: 0;
+    box-sizing: border-box;
   }
   .blog-title {
-    margin-top: 3rem;
+    color: var(--white);
+    padding-top: 6rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .blog-text {
+    padding-inline: 2rem;
+
     color: var(--white);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .blog-sub-text {
+    padding-inline: 2rem;
+    margin-bottom: auto;
+    color: var(--white);
+    font-size: 0.8rem;
   }
 
-  .blog-content {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: var(--white);
-  }
-  .blog-button-container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  .blog-button {
-    color: var(--blood-red);
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-    padding-inline: 1rem;
-    padding-block: 0.8rem;
+  .blog-image1 {
+    align-content: flex-end;
+    height: 16rem;
+    width: 16rem;
     border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: var(--blood-red);
-    border-style: solid;
-  }
-  .blog-image {
-    margin: 1.5rem;
-    height: 24rem;
-    width: 20rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 2rem;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/react-native.png") no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+  }
+  .blog-image2 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image3 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/expo-cli.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image4 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Big Monitors */
 @media only screen and (min-width: 1281px) {
-  .sixth-title {
-    color: var(--white);
-    padding-top: 6rem;
-    font-weight: bold;
-    font-size: 3rem;
-  }
   .blog-container {
     background-color: #000;
     padding: 10px;
+    box-sizing: border-box;
   }
   .blog-list {
+    padding-top: 6rem;
     justify-content: center;
     display: flex;
-    margin-inline: 1rem;
-    grid-template-columns: 30rem 30rem 30rem 30rem;
-    list-style: none;
-  }
-  .blog-text-container {
-    margin: 2rem;
-    padding: 0;
+    box-sizing: border-box;
   }
   .blog-title {
-    margin-top: 3rem;
+    color: var(--white);
+    padding-top: 6rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .blog-text {
+    padding-inline: 2rem;
+
     color: var(--white);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .blog-sub-text {
+    padding-inline: 2rem;
+    margin-bottom: auto;
+    color: var(--white);
+    font-size: 0.8rem;
   }
 
-  .blog-content {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    color: var(--white);
-  }
-  .blog-button-container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  .blog-button {
-    color: var(--blood-red);
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
-    padding-inline: 1rem;
-    padding-block: 0.8rem;
+  .blog-image1 {
+    align-content: flex-end;
+    height: 18rem;
+    width: 18rem;
     border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: var(--blood-red);
-    border-style: solid;
-  }
-  .blog-image {
-    margin: 1.5rem;
-    height: 24rem;
-    width: 20rem;
-    border-radius: 2rem;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/react-native.png") no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), #000);
+  }
+  .blog-image2 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image3 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/expo-cli.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .blog-image4 {
+    align-content: flex-end;
+    margin-left: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #000),
+      url("../res/google-sign-in.png") no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }

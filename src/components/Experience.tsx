@@ -3,15 +3,17 @@ import "./Experience.scss";
 
 export default function MyExperience() {
   return (
-    <div style={{ backgroundColor: "#000000" }} id="experience">
+    <section className="fourth-section" id="experience">
       <div className="fourth-section">
-        <h3 className="experience-title">Experience</h3>
+        <h2 className="experience-title">Experience</h2>
 
         <div className="experience-div">
           <div>
             <div className="back-ground">
               <span className="company-text">{"Persistent Systems"}</span>
-              <span className="company-sub-text">{"Engineering Lead"}</span>
+              <span className="company-sub-text">
+                {"Senior Engineering Lead"}
+              </span>
               <span className="company-sub-text">{"Mar 2022 to Present"}</span>
             </div>
             <br></br>
@@ -49,12 +51,12 @@ export default function MyExperience() {
           <div>
             <img
               alt="office"
-              src={require("../res/office.png")}
+              src={require("../res/office1.png")}
               className="office-logo"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

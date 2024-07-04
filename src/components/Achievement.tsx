@@ -1,127 +1,63 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Achievement.scss";
-const gridImage = [
-  {
-    id: 1,
-    text: "Top Talent 2024",
-    value: require("../res/certificate/top2024.png"),
-  },
-  {
-    id: 2,
-    text: "Top Talent 2023",
-    value: require("../res/certificate/top2023.png"),
-  },
-  {
-    id: 3,
-    text: "Bravo - Individual Awards",
-    value: require("../res/certificate/bravo.png"),
-  },
 
-  {
-    id: 4,
-    text: "GenAI Foundation - GenAI Assisted Coding using Amazon CdeWhisperer on FY 2023",
-    value: require("../res/certificate/genai.png"),
-  },
-  {
-    id: 5,
-    text: "Interviewers Certification Workshop",
-    value: require("../res/certificate/interview.png"),
-  },
-  {
-    id: 6,
-    text: "React Native - The Practical Guide",
-    value: require("../res/certificate/rn2024.png"),
-  },
-
-  {
-    id: 7,
-    text: "Master CI/CD for React Native",
-    value: require("../res/certificate/ci-cd.png"),
-  },
-  {
-    id: 8,
-    text: "Fastlane for React Native: Deploy your app autonomously!",
-    value: require("../res/certificate/fastlane.png"),
-  },
-  {
-    id: 9,
-    text: "The Git & Github Bootcamp",
-    value: require("../res/certificate/github-bootcamp.png"),
-  },
-  {
-    id: 10,
-    text: "The Complete React Native + Hooks Course",
-    value: require("../res/certificate/hook.png"),
-  },
-  {
-    id: 11,
-    text: "Android Studio Masterclass Conquer the Android IDE",
-    value: require("../res/certificate/android-certificate.png"),
-  },
-  {
-    id: 12,
-    text: "Android Unit Testing and Test Driven Development",
-    value: require("../res/certificate/unit-testing.png"),
-  },
-];
-
-export default function Achievements() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+const Achievement = () => {
   return (
-    <div id="fifthSection" className="achievement-container">
-      <p className="fifth-title">Achievement</p>
+    <section className="achievement-section" id="achievement">
+      <h2 className="achievement-title">Achievement</h2>
 
-      <div className="certificate-container">
-        <img
-          alt="left-arrow"
-          src={require("../res/left-arrow.png")}
-          onClick={() => {
-            if (activeIndex) {
-              setActiveIndex(activeIndex - 1);
-            }
-          }}
-          className="arrow"
-        />
-        <div>
+      <div className="achievement-div">
+        <div className="center-div">
           <img
-            alt="certificate"
-            className="certificate-name"
-            src={gridImage[activeIndex].value}
+            alt="award-icon"
+            src={require("../res/award-icon.png")}
+            className="award-icon"
           />
+          <span className="award-name">{"Persistent Top Talent 2023-24"}</span>
         </div>
-
-        <img
-          alt="right-arrow"
-          src={require("../res/right-arrow.png")}
-          onClick={() => {
-            if (activeIndex < gridImage.length - 1) {
-              setActiveIndex(activeIndex + 1);
-            }
-          }}
-          className="arrow"
-        />
+        <div className="center-div">
+          <img
+            alt="star"
+            src={require("../res/star.png")}
+            className="award-icon"
+          />
+          <span className="award-name">{"Codiant Star Performer 2020"}</span>
+        </div>
+        <div className="center-div">
+          <img
+            alt="bravo"
+            src={require("../res/bravo.png")}
+            className="award-icon"
+          />
+          <span className="award-name">{"Bravo Individual Award"}</span>
+        </div>
+        <div className="center-div">
+          <img
+            alt="diploma"
+            src={require("../res/diploma.png")}
+            className="award-icon"
+          />
+          <span className="award-name">{"Udemy Learning Certificate"}</span>
+        </div>
+        <div className="center-div">
+          <img
+            alt="creativity"
+            src={require("../res/creativity.png")}
+            className="award-icon"
+          />
+          <span className="award-name">{"Open Source Contributor"}</span>
+        </div>
+        <div className="center-div">
+          <img
+            alt="repo"
+            src={require("../res/repo.png")}
+            className="award-icon"
+          />
+          <span className="award-name">{"2K Reputation Stackoverflow"}</span>
+        </div>
       </div>
-      <div>
-        <p className="reviewer-name">{gridImage[activeIndex].text}</p>
-      </div>
-      <div className="pagination-container">
-        {gridImage.map((item, index) => {
-          return (
-            <div>
-              <div
-                style={{
-                  height: 10,
-                  width: 10,
-                  marginInline: 2,
-                  borderRadius: 5,
-                  backgroundColor: index === activeIndex ? "pink" : "gray",
-                }}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Achievement;

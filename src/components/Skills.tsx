@@ -2,10 +2,10 @@ import React from "react";
 import "../components/Skills.scss";
 export default function Skills() {
   return (
-    <div id="skills" className="main-background">
-      <h3 className="skill-title">Skills</h3>
+    <section id="skills" className="main-background">
+      <h2 className="skill-title">Skills</h2>
 
-      <h4 className="lang-title">Languages and Libraries</h4>
+      <h1 className="lang-title">Languages and Libraries</h1>
 
       <div>
         <img
@@ -54,7 +54,7 @@ export default function Skills() {
           className="skill-image"
         />
       </div>
-      <h4 className="lang-title">Tools</h4>
+      <h1 className="lang-title">Tools</h1>
 
       <div>
         <img
@@ -88,6 +88,6 @@ export default function Skills() {
           className="skill-image"
         />
       </div>
-    </div>
+    </section>
   );
 }

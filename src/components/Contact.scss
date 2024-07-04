@@ -1,80 +1,62 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --gray: #{$gray};
-  --green: #{$green};
-  --dark-green: #{$dark-green};
+  --red: #{#ff004f};
+  --black: #{#000000};
 }
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
-  .seventh-background {
-    padding: 10px;
-    background-color: black;
-  }
-  .seventh-title {
-    color: var(--white);
-    padding-top: 5rem;
-    font-weight: bold;
-    font-size: 2.2rem;
-  }
-  .seventh-subtitle {
-    color: var(--white);
-    font-size: 1rem;
-  }
-  .touch-container {
-    display: inline;
+  .contact-container {
     justify-content: center;
+    display: grid;
+    padding-top: 40px;
+    background-color: var(--black);
   }
-  .location-margin {
-    margin: 2rem;
+  .contact-title {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
   }
-  .pin-image {
-    width: 1.5rem;
-    height: 1.5rem;
+  .email-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .location-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .detail {
+    justify-content: flex-start;
+    display: flex;
+    margin-block-end: 2rem;
+    align-items: center;
   }
 
-  .address-text {
-    font-size: 0.9rem;
-    color: var(--white);
-  }
   .name-input {
-    width: 15rem;
+    width: 18rem;
     height: 2.5rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
+
     margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .email-input {
     color: var(--white);
-    width: 15rem;
+    width: 18rem;
     height: 2.5rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
     margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .message-input {
-    width: 15rem;
-    height: 5rem;
+    width: 18rem;
+    height: 9rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
     margin-bottom: 2rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .submit-container {
     display: flex;
@@ -87,48 +69,153 @@
     font-size: 1rem;
     margin-bottom: 5rem;
     background-color: #ff004f;
-    width: 17rem;
+    width: 20rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: #ff004f;
-    border-style: solid;
+  }
+
+  .text-div {
+    display: inline-block;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .detail-title {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .detail-value {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
-  .seventh-background {
-    padding: 10px;
-    background-color: black;
-  }
-  .seventh-title {
-    color: var(--white);
-    padding-top: 5rem;
-    font-weight: bold;
-    font-size: 2.2rem;
-  }
-  .seventh-subtitle {
-    color: var(--white);
-    font-size: 1rem;
-  }
-  .touch-container {
+  .contact-container {
+    justify-content: space-around;
     display: flex;
-    justify-content: center;
+    padding-top: 80px;
+    padding-left: 2rem;
+    background-color: var(--black);
   }
-  .location-margin {
-    margin: 2rem;
+  .contact-title {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
   }
-  .pin-image {
-    width: 2rem;
-    height: 2rem;
+  .email-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .location-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .detail {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
   }
 
-  .address-text {
-    font-size: 0.9rem;
-    color: var(--white);
+  .name-input {
+    width: 25rem;
+    height: 2.5rem;
+    padding-inline: 1rem;
+
+    margin-bottom: 1rem;
   }
+  .email-input {
+    color: var(--white);
+    width: 25rem;
+    height: 2.5rem;
+    padding-inline: 1rem;
+    margin-bottom: 1rem;
+  }
+  .message-input {
+    width: 25rem;
+    height: 9rem;
+    padding-inline: 1rem;
+
+    margin-bottom: 2rem;
+  }
+  .submit-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .submit-button {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    background-color: #ff004f;
+    width: 27rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  .text-div {
+    display: inline-block;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .detail-title {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .detail-value {
+    color: var(--white);
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .contact-container {
+    justify-content: space-around;
+    display: flex;
+    padding-top: 80px;
+    background-color: var(--black);
+  }
+  .contact-title {
+    font-weight: bold;
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .email-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .location-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .detail {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
   .name-input {
     width: 40rem;
     height: 2.5rem;
@@ -177,83 +264,86 @@
     font-size: 1rem;
     margin-bottom: 5rem;
     background-color: #ff004f;
-    width: 17rem;
+    width: 40rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;
     border-color: #ff004f;
     border-style: solid;
   }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .seventh-background {
-    padding: 10px;
-    background-color: black;
+  .text-div {
+    display: inline-block;
+    text-align: left;
+    margin-left: 1rem;
   }
-  .seventh-title {
-    color: var(--white);
-    padding-top: 5rem;
+  .detail-title {
     font-weight: bold;
-    font-size: 2.2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
-  .seventh-subtitle {
+  .detail-value {
     color: var(--white);
     font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
-  .touch-container {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Big Monitors */
+@media only screen and (min-width: 1281px) {
+  .contact-container {
+    justify-content: space-between;
     display: flex;
-    justify-content: center;
+    padding-top: 80px;
+    padding-inline: 6rem;
+    background-color: var(--black);
   }
-  .location-margin {
-    margin: 2rem;
-  }
-  .pin-image {
-    width: 2rem;
-    height: 2rem;
-  }
-  .address-text {
-    font-size: 0.9rem;
+  .contact-title {
+    font-weight: bold;
     color: var(--white);
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
   }
+  .email-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .location-icon {
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+  }
+  .detail {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
   .name-input {
     width: 40rem;
     height: 2.5rem;
+    margin-top: 2rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
     margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .email-input {
     color: var(--white);
     width: 40rem;
     height: 2.5rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
     margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .message-input {
     width: 40rem;
     height: 9rem;
     padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
     margin-bottom: 2rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
   }
   .submit-container {
     display: flex;
@@ -267,100 +357,26 @@
     margin-bottom: 5rem;
     background-color: #ff004f;
     width: 42rem;
-    padding-block: 0.8rem;
+    padding-block: 1rem;
     border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: #ff004f;
-    border-style: solid;
   }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Big Monitors */
-@media only screen and (min-width: 1281px) {
-  .seventh-background {
-    padding: 10px;
-    background-color: black;
+  .text-div {
+    display: inline-block;
+    text-align: left;
+    margin-left: 1rem;
   }
-  .seventh-title {
-    color: var(--white);
-    padding-top: 5rem;
+  .detail-title {
     font-weight: bold;
-    font-size: 3rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
   }
-  .seventh-subtitle {
+  .detail-value {
     color: var(--white);
     font-size: 1rem;
-  }
-  .touch-container {
-    display: flex;
-    justify-content: center;
-  }
-  .location-margin {
-    margin: 2rem;
-  }
-  .pin-image {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .address-text {
-    font-size: 0.9rem;
-    color: var(--white);
-  }
-  .name-input {
-    width: 40rem;
-    height: 2.5rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .email-input {
-    color: var(--white);
-    width: 40rem;
-    height: 2.5rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 1rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .message-input {
-    width: 40rem;
-    height: 9rem;
-    padding-inline: 1rem;
-    border-left-width: 0rem;
-    border-right-width: 0rem;
-    border-top-width: 0rem;
-    margin-bottom: 2rem;
-    border-bottom-width: 0.2rem;
-    background-color: var(--white);
-    border-bottom-color: var(--white);
-  }
-  .submit-container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  .submit-button {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 5rem;
-    background-color: #ff004f;
-    width: 40rem;
-    padding-block: 0.8rem;
-    border-radius: 0.5rem;
-    border-width: 2px;
-    border-color: #ff004f;
-    border-style: solid;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
