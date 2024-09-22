@@ -1,17 +1,15 @@
 import React from "react";
 import "../components/AboutMe.scss";
-export default function SecondSection() {
+const AboutMe = () => {
   return (
     <section className="about-section" id="aboutMe">
-      <img
-        alt="about-me"
-        src={require("../res/background3.png")}
-        className="logo"
-      />
+      <div className="logo">
+        <img alt="about-me" src={require("../res/background3.png")} />
+      </div>
       <div>
-        <h2 className="about-title">
+        <h1 className="about-title">
           About <span className="about-me">Me</span>
-        </h2>
+        </h1>
         <p className="about-text">
           My self <span>Vishal Dhanotiya</span>. I am a Frontend developer. My
           expertise lies in frontend technologies, including
@@ -32,4 +30,6 @@ export default function SecondSection() {
       </div>
     </section>
   );
-}
+};
+
+export default AboutMe;

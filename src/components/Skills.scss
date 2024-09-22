@@ -9,16 +9,44 @@
 @media (min-width: 360px) and (max-width: 600px) {
   .main-background {
     display: flex;
+    margin-inline: 2rem;
     flex-direction: column;
-    background-color: var(--black);
+  }
+  .skill-div {
+    justify-content: center;
+  }
+  .skill-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .skill-image {
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .lang-title {
+    align-self: center;
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Tablets iPads (Portrait) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .main-background {
+    display: flex;
+    margin: 2.5rem;
+    padding: 1rem;
+    flex-direction: column;
   }
 
   .skill-title {
-    padding-inline: 3rem;
-    font-weight: bold;
     font-size: 2rem;
     text-align: start;
-    color: white;
+  }
+
+  .skill-div {
+    align-self: center;
   }
   .skill-image {
     margin: 1rem;
@@ -28,41 +56,6 @@
   .lang-title {
     align-self: center;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--white);
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* Tablets iPads (Portrait) */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .main-background {
-    display: flex;
-    padding: 6rem;
-    flex-direction: column;
-    background-color: var(--black);
-  }
-
-  .skill-title {
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-align: start;
-    color: white;
-  }
-
-  .skill-div {
-    background-color: #f51940;
-  }
-  .skill-image {
-    margin: 1rem;
-    width: 4rem;
-    height: 4rem;
-  }
-  .lang-title {
-    align-self: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--white);
   }
 }
 
@@ -71,31 +64,28 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .main-background {
     display: flex;
-    padding: 6rem;
+    padding-top: 3rem;
     flex-direction: column;
-    background-color: var(--black);
+    margin: 2.5rem;
   }
 
   .skill-title {
-    font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
     text-align: start;
-    color: white;
   }
 
   .skill-div {
-    background-color: #f51940;
+    align-self: center;
   }
   .skill-image {
-    margin: 1rem;
+    margin: 1.5rem;
     width: 4rem;
     height: 4rem;
   }
   .lang-title {
     align-self: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--white);
+    font-size: 1.5rem;
   }
 }
 
@@ -106,18 +96,19 @@
     display: flex;
     padding-top: 5rem;
     flex-direction: column;
-    box-sizing: border-box;
-    background-color: var(--black);
+    margin: 2.5rem;
   }
 
   .skill-title {
-    font-weight: bold;
     font-size: 2.5rem;
-    padding-left: 6rem;
+    padding-left: 1rem;
     text-align: start;
-    color: white;
+    color: var(--text-primary);
   }
 
+  .skill-div {
+    align-self: center;
+  }
   .skill-image {
     margin: 2rem;
     width: 4rem;
@@ -126,7 +117,6 @@
   .lang-title {
     align-self: center;
     font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
   }
 }

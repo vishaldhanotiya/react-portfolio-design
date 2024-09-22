@@ -1,10 +1,10 @@
 import React from "react";
 import "./Experience.scss";
 
-export default function MyExperience() {
+const MyExperience = () => {
   return (
     <section className="fourth-section" id="experience">
-      <div className="fourth-section">
+      <div>
         <h2 className="experience-title">Experience</h2>
 
         <div className="experience-div">
@@ -17,7 +17,6 @@ export default function MyExperience() {
               <span className="company-sub-text">{"Mar 2022 to Present"}</span>
             </div>
             <br></br>
-            <br></br>
             <div className="back-ground">
               <span className="company-text">
                 {"Codiant Software Technologies"}
@@ -28,7 +27,6 @@ export default function MyExperience() {
               <span className="company-sub-text">{"Dec 2017 - Feb 2022"}</span>
             </div>
             <br></br>
-            <br></br>
             <div className="back-ground">
               <span className="company-text">
                 {"Young Decade IT Software Solution"}
@@ -36,7 +34,6 @@ export default function MyExperience() {
               <span className="company-sub-text">{"Software Engineer"}</span>
               <span className="company-sub-text">{"May 2016 - Nov 2017"}</span>
             </div>
-            <br></br>
             <br></br>
             <div className="back-ground">
               <span className="company-text">
@@ -48,10 +45,10 @@ export default function MyExperience() {
               <span className="company-sub-text">{"Dec 2015 - Feb 2016"}</span>
             </div>
           </div>
-          <div>
+          <div className="logo-offices">
             <img
               alt="office"
-              src={require("../res/office1.png")}
+              src={require("../res/office.png")}
               className="office-logo"
             />
           </div>
@@ -59,4 +56,5 @@ export default function MyExperience() {
       </div>
     </section>
   );
-}
+};
+export default MyExperience;

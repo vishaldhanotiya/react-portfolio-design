@@ -12,12 +12,10 @@
     justify-content: center;
     display: grid;
     padding-top: 40px;
-    background-color: var(--black);
   }
   .contact-title {
-    font-weight: bold;
-    color: var(--white);
-    font-size: 2.5rem;
+    color: var(--text-primary);
+    font-size: 2rem;
     text-align: left;
     margin-bottom: 2rem;
   }
@@ -42,11 +40,10 @@
     width: 18rem;
     height: 2.5rem;
     padding-inline: 1rem;
-
     margin-bottom: 1rem;
   }
   .email-input {
-    color: var(--white);
+    color: var(--text-primary);
     width: 18rem;
     height: 2.5rem;
     padding-inline: 1rem;
@@ -60,11 +57,12 @@
   }
   .submit-container {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-self: center;
   }
   .submit-button {
-    color: var(--white);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 5rem;
@@ -80,14 +78,13 @@
     margin-left: 1rem;
   }
   .detail-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 10px;
   }
   .detail-value {
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     text-align: left;
     margin-bottom: 10px;
@@ -102,12 +99,10 @@
     display: flex;
     padding-top: 80px;
     padding-left: 2rem;
-    background-color: var(--black);
   }
   .contact-title {
-    font-weight: bold;
-    color: var(--white);
-    font-size: 2.5rem;
+    color: var(--text-primary);
+    font-size: 2rem;
     text-align: left;
     margin-bottom: 2rem;
   }
@@ -135,7 +130,7 @@
     margin-bottom: 1rem;
   }
   .email-input {
-    color: var(--white);
+    color: var(--text-primary);
     width: 25rem;
     height: 2.5rem;
     padding-inline: 1rem;
@@ -154,7 +149,7 @@
     align-self: center;
   }
   .submit-button {
-    color: var(--white);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 5rem;
@@ -170,14 +165,13 @@
     margin-left: 1rem;
   }
   .detail-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 10px;
   }
   .detail-value {
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     text-align: left;
     margin-bottom: 10px;
@@ -190,24 +184,22 @@
   .contact-container {
     justify-content: space-around;
     display: flex;
-    padding-top: 80px;
-    background-color: var(--black);
+    margin-inline: 2rem;
+    padding-top: 5rem;
   }
   .contact-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2.5rem;
     text-align: left;
-    margin-bottom: 2rem;
   }
   .email-icon {
-    width: 45px;
-    height: 45px;
+    width: 3rem;
+    height: 3rem;
     background-size: contain;
   }
   .location-icon {
-    width: 45px;
-    height: 45px;
+    width: 3rem;
+    height: 3rem;
     background-size: contain;
   }
   .detail {
@@ -229,7 +221,7 @@
     border-bottom-color: var(--white);
   }
   .email-input {
-    color: var(--white);
+    color: var(--text-primary);
     width: 40rem;
     height: 2.5rem;
     padding-inline: 1rem;
@@ -259,12 +251,13 @@
     align-self: center;
   }
   .submit-button {
-    color: var(--white);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 5rem;
+    text-align: center;
     background-color: #ff004f;
-    width: 40rem;
+    width: 42rem;
     padding-block: 0.8rem;
     border-radius: 0.5rem;
     border-width: 2px;
@@ -278,14 +271,13 @@
     margin-left: 1rem;
   }
   .detail-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 10px;
   }
   .detail-value {
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     text-align: left;
     margin-bottom: 10px;
@@ -298,16 +290,14 @@
   .contact-container {
     justify-content: space-between;
     display: flex;
-    padding-top: 80px;
-    padding-inline: 6rem;
-    background-color: var(--black);
+    padding-block: 5rem;
+    padding-right: 5rem;
   }
   .contact-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2.5rem;
+    padding-left: 3rem;
     text-align: left;
-    margin-bottom: 2rem;
   }
   .email-icon {
     width: 45px;
@@ -320,6 +310,7 @@
     background-size: contain;
   }
   .detail {
+    margin-left: 4rem;
     display: flex;
     margin-bottom: 1rem;
     align-items: center;
@@ -333,7 +324,7 @@
     margin-bottom: 1rem;
   }
   .email-input {
-    color: var(--white);
+    color: var(--text-primary);
     width: 40rem;
     height: 2.5rem;
     padding-inline: 1rem;
@@ -351,10 +342,11 @@
     align-self: center;
   }
   .submit-button {
-    color: var(--white);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 5rem;
+    text-align: center;
     background-color: #ff004f;
     width: 42rem;
     padding-block: 1rem;
@@ -367,14 +359,13 @@
     margin-left: 1rem;
   }
   .detail-title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.5rem;
     text-align: left;
     margin-bottom: 10px;
   }
   .detail-value {
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     text-align: left;
     margin-bottom: 10px;

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../components/Home.scss";
 import Type from "./Type.tsx";
+import { ThemeContext } from "./ThemeProvider.tsx";
+import facebook from "../res/facebook.svg";
 
 const Home = () => {
+  const { darkTheme } = useContext(ThemeContext);
+  console.log("Home===", darkTheme);
+
   return (
     <section id="home" className="home-container">
       <div className="name-container">
@@ -36,11 +41,7 @@ const Home = () => {
               rel="noreferrer"
               href="https://www.facebook.com/vishal.dhanotiya.75/"
             >
-              <img
-                alt="facebook"
-                src={require("../res/facebook.png")}
-                className="img"
-              />
+              <img alt="facebook" src={facebook} className="img" />
             </a>
           </span>
           <span className="circle">

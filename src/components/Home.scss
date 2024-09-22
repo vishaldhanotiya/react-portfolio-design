@@ -9,25 +9,24 @@
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
   .home-container {
-    padding-top: 10rem;
-    justify-content: space-around;
+    padding-top: 5rem;
+    display: flex;
     align-items: center;
-    background-color: var(--black);
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .my-photo {
-    height: 18rem;
-    transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
+    height: 20rem;
   }
 
   .name-container {
     display: inline;
+    padding: 3rem;
     flex-direction: column;
   }
   .title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2rem;
     span {
       color: var(--red);
@@ -37,7 +36,6 @@
   .description {
     font-size: 1.5rem;
     align-self: start;
-    font-weight: bold;
     color: var(--red);
   }
 
@@ -76,17 +74,17 @@
   .social-section {
     display: flex;
     margin-block: 2rem;
-    justify-content: center;
+    justify-content: space-between;
   }
   .circle {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    margin: 1rem;
+
+    display: flex;
     align-items: center;
     justify-content: center;
     border-width: 1.5px;
-    border-color: var(--white);
     border-style: solid;
   }
   .img {
@@ -102,13 +100,10 @@
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .home-container {
+    grid-template-columns: 1fr 1fr;
     display: grid;
+    min-height: 100vh;
     align-items: center;
-    grid-template-columns: 1fr 0.3fr;
-    height: 42rem;
-    padding-top: 6rem;
-    box-sizing: border-box;
-    background-color: var(--black);
   }
   .name-container {
     display: flex;
@@ -117,12 +112,9 @@
   }
   .my-photo {
     height: 25rem;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
   .title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2rem;
     text-align: left;
     span {
@@ -130,7 +122,6 @@
     }
   }
   .description {
-    font-weight: bold;
     color: var(--red);
     font-size: 1.5rem;
     align-self: start;
@@ -172,11 +163,11 @@
     display: flex;
   }
   .circle {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: flex;
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     align-items: center;
     justify-content: center;
     border-width: 1.5px;
@@ -187,7 +178,6 @@
     width: 25px;
     height: 25px;
     margin-top: 0.3rem;
-    align-self: center;
     background-size: contain;
   }
 }
@@ -196,36 +186,29 @@
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .home-container {
-    display: flex;
-    flex-direction: row;
-    height: 42rem;
-    padding-top: 6rem;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    min-height: 100vh;
+    padding-top: 50px;
     align-items: center;
-    box-sizing: border-box;
-    background-color: var(--black);
   }
   .name-container {
     display: flex;
+    padding-left: 5rem;
     flex-direction: column;
   }
   .my-photo {
     height: 30rem;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
   .title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2.5rem;
     text-align: left;
-    margin-bottom: 10px;
     span {
       color: var(--red);
     }
   }
   .description {
-    font-weight: bold;
     color: var(--red);
     font-size: 2rem;
     align-self: start;
@@ -267,22 +250,19 @@
     display: flex;
   }
   .circle {
-    width: 32px; /* Set the desired width */
-    height: 32px; /* Set the desired height */
+    width: 35px; /* Set the desired width */
+    height: 35px; /* Set the desired height */
     border-radius: 50%; /* Make the div a circle */
     display: flex;
-    margin-left: 1.5rem;
-    align-items: center;
+    margin-right: 1.5rem;
     justify-content: center;
     border-width: 1.5px;
-    border-color: var(--white);
     border-style: solid;
   }
   .img {
     width: 25px;
     height: 25px;
     margin-top: 0.3rem;
-    align-self: center;
     background-size: contain;
   }
 }
@@ -294,11 +274,8 @@
     grid-template-columns: 1fr 1fr;
     display: grid;
     min-height: 100vh;
-    padding-top: 130px;
-    padding-bottom: 70px;
+    padding-top: 50px;
     align-items: center;
-    box-sizing: border-box;
-    background-color: var(--black);
   }
 
   .name-container {
@@ -308,23 +285,18 @@
   }
   .my-photo {
     height: 35rem;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
 
   .title {
-    font-weight: bold;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 2.5rem;
     text-align: left;
-    margin-bottom: 10px;
     span {
       color: var(--red);
     }
   }
 
   .description {
-    font-weight: bold;
     color: var(--red);
     font-size: 2rem;
     align-self: start;
@@ -367,12 +339,14 @@
     width: 60%;
   }
   .circle {
-    width: 32px;
-    height: 32px;
-    margin-left: 1.5rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
     border-radius: 50%;
-    border-color: var(--white);
+    justify-content: center;
+    border-width: 1.5px;
     border-style: solid;
+    margin-right: 1.5rem;
   }
   .img {
     width: 25px;

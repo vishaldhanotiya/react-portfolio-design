@@ -1,0 +1,39 @@
+/* Roboto Black Italic */
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url("../src/fonts/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url("../src/fonts/Nunito-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Nunito-ExtraBold";
+  src: url("../src/fonts/Nunito-ExtraBold.ttf");
+}
+h1 {
+  font-family: "Nunito-ExtraBold";
+}
+h2 {
+  font-family: "Nunito-ExtraBold";
+}
+h3 {
+  font-family: "Nunito-ExtraBold";
+}
+h4 {
+  font-family: "Nunito-ExtraBold";
+}
+p {
+  font-family: "Nunito-Regular";
+}
+body {
+  margin: 0;
+  font-family: "Nunito-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

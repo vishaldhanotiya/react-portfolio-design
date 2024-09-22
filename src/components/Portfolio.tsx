@@ -10,7 +10,7 @@ import NavBar from "./NavBar.tsx";
 
 const Portfolio = (props) => {
   return (
-    <div>
+    <>
       <NavBar />
       <Home {...props} />
       <AboutMe />
@@ -19,7 +19,7 @@ const Portfolio = (props) => {
       <Achievement />
       <Blog />
       <Contact />
-    </div>
+    </>
   );
 };
 

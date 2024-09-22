@@ -10,14 +10,14 @@
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
   .achievement-section {
-    background-color: var(--black);
-    padding: 1rem;
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
   }
 
   .achievement-title {
-    color: white;
-    font-weight: bold;
+    color: var(--text-primary);
     font-size: 2rem;
+    text-align: center;
   }
 
   .award-icon {
@@ -25,14 +25,12 @@
   }
   .achievement-div {
     display: block;
-    margin: 1rem;
   }
 
   .award-name {
-    font-weight: bold;
     padding-left: 1rem;
     align-self: center;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.2rem;
   }
   .center-div {
@@ -45,14 +43,14 @@
 /* Tablets iPads (Portrait) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .achievement-section {
-    background-color: var(--black);
     padding-top: 2rem;
+    // margin-inline: 2.5rem;
   }
 
   .achievement-title {
-    color: white;
-    font-weight: bold;
-    font-size: 2.5rem;
+    color: var(--text-primary);
+    font-size: 2rem;
+    padding-left: 3rem;
   }
 
   .award-icon {
@@ -65,10 +63,9 @@
   }
 
   .award-name {
-    font-weight: bold;
     padding-left: 1rem;
     align-self: center;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.4rem;
   }
   .center-div {
@@ -81,14 +78,13 @@
 /* Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .achievement-section {
-    background-color: var(--black);
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
 
   .achievement-title {
-    color: white;
-    font-weight: bold;
+    color: var(--text-primary);
     font-size: 2.5rem;
+    padding-left: 3rem;
   }
 
   .award-icon {
@@ -101,10 +97,9 @@
   }
 
   .award-name {
-    font-weight: bold;
     padding-left: 1rem;
     align-self: center;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1.4rem;
   }
   .center-div {
@@ -117,14 +112,13 @@
 /* Big Monitors */
 @media only screen and (min-width: 1281px) {
   .achievement-section {
-    background-color: var(--black);
-    padding-top: 6rem;
+    padding-top: 3rem;
   }
 
   .achievement-title {
-    color: white;
-    font-weight: bold;
+    color: var(--text-primary);
     font-size: 2.5rem;
+    padding-left: 3rem;
   }
 
   .award-icon {
@@ -137,10 +131,10 @@
   }
 
   .award-name {
-    font-weight: bold;
     padding-left: 1rem;
     align-self: center;
-    color: var(--white);
+    font-family: "Nunito-SemiBold";
+    color: var(--text-primary);
     font-size: 1.5rem;
   }
   .center-div {

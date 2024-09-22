@@ -10,15 +10,13 @@
 /* Mobile Devices */
 @media (min-width: 360px) and (max-width: 600px) {
   .fourth-section {
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--black);
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
   }
 
   .experience-title {
-    color: white;
-    text-align: left;
-    font-weight: bold;
+    color: var(--text-primary);
+    text-align: center;
     font-size: 2rem;
   }
 
@@ -30,15 +28,15 @@
   }
 
   .company-text {
-    font-weight: bold;
     display: flex;
-    color: var(--white);
+    font-family: "Nunito-SemiBold";
+    color: var(--text-primary);
     font-size: 1rem;
   }
   .company-sub-text {
-    font-weight: 400;
     display: flex;
-    color: var(--white);
+    font-family: "Nunito-Regular";
+    color: var(--text-primary);
     font-size: 0.8rem;
   }
   .back-ground {
@@ -55,39 +53,38 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 3rem;
-    background-color: var(--black);
   }
 
   .experience-title {
-    color: white;
+    color: var(--text-primary);
     text-align: left;
-    font-weight: bold;
-    padding-left: 4rem;
-    font-size: 2.5rem;
+    padding-left: 3rem;
+    font-size: 2rem;
   }
 
   .office-logo {
     width: 25rem;
   }
   .experience-div {
-    display: flex;
-    padding-left: 4rem;
+    display: block;
+    padding-inline: 4rem;
   }
 
   .company-text {
     text-align: left;
-
-    font-weight: bold;
     display: flex;
     align-self: center;
-    color: var(--white);
+    font-family: "Nunito-SemiBold";
+
+    color: var(--text-primary);
     font-size: 1rem;
   }
   .company-sub-text {
-    font-weight: 400;
     display: flex;
     align-self: center;
-    color: var(--white);
+    font-family: "Nunito-Regular";
+
+    color: var(--text-primary);
     font-size: 0.8rem;
   }
   .back-ground {
@@ -104,39 +101,39 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 2rem;
-    background-color: var(--black);
   }
 
   .experience-title {
-    color: white;
+    color: var(--text-primary);
     text-align: left;
-    font-weight: bold;
     font-size: 2.5rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
 
   .office-logo {
-    width: 35rem;
+    width: 30rem;
   }
   .experience-div {
     display: grid;
     padding-left: 4rem;
     align-items: center;
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 0.9fr 1fr;
   }
 
   .company-text {
-    font-weight: bold;
     display: flex;
     align-self: center;
-    color: var(--white);
-    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-family: "Nunito-SemiBold";
+
+    font-size: 1.4rem;
   }
   .company-sub-text {
-    font-weight: 400;
     display: flex;
     align-self: center;
-    color: var(--white);
+    color: var(--text-primary);
+    font-family: "Nunito-Regular";
+
     font-size: 1rem;
   }
   .back-ground {
@@ -152,17 +149,14 @@
   .fourth-section {
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--black);
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
 
   .experience-title {
-    color: white;
-    padding-left: 6rem;
-
+    color: var(--text-primary);
     text-align: left;
-    font-weight: bold;
     font-size: 2.5rem;
+    padding-left: 3rem;
   }
 
   .office-logo {
@@ -170,24 +164,25 @@
   }
   .experience-div {
     display: grid;
-    padding-left: 6rem;
+    padding-left: 4rem;
     align-items: center;
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 0.9fr 1fr;
   }
 
   .company-text {
-    font-weight: bold;
     display: flex;
-    margin-bottom: 0.4rem;
     align-self: center;
-    color: var(--white);
+    font-family: "Nunito-SemiBold";
+    color: var(--text-primary);
     font-size: 1.5rem;
   }
   .company-sub-text {
     font-weight: 400;
     display: flex;
     align-self: center;
-    color: var(--white);
+    font-family: "Nunito-Regular";
+
+    color: var(--text-primary);
     font-size: 1rem;
   }
   .back-ground {

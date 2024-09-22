@@ -1,13 +1,12 @@
 import React from "react";
 import "../components/Skills.scss";
-export default function Skills() {
+const Skills = () => {
   return (
     <section id="skills" className="main-background">
       <h2 className="skill-title">Skills</h2>
-
       <h1 className="lang-title">Languages and Libraries</h1>
 
-      <div>
+      <div className="skill-div">
         <img
           alt="img1"
           src={require("../res/html.png")}
@@ -56,7 +55,7 @@ export default function Skills() {
       </div>
       <h1 className="lang-title">Tools</h1>
 
-      <div>
+      <div className="skill-div">
         <img
           alt="img9"
           src={require("../res/android.png")}
@@ -90,4 +89,5 @@ export default function Skills() {
       </div>
     </section>
   );
-}
+};
+export default Skills;

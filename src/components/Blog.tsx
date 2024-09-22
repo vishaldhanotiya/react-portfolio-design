@@ -1,7 +1,7 @@
 import React from "react";
 import "./Blog.scss";
 
-export default function MyBlogs() {
+const MyBlogs = () => {
   return (
     <section className="blog-container" id="blog">
       <h2 className="blog-title">Blog</h2>
@@ -41,4 +41,6 @@ export default function MyBlogs() {
       </div>
     </section>
   );
-}
+};
+
+export default MyBlogs;

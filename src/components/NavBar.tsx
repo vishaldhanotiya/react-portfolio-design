@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../components/NavBar.scss";
+import ThemeToggle from "./ThemeToggle.tsx";
+import bull from "../res/bull.svg";
 
 const NavBar = () => {
   const useWindowSize = () => {
@@ -39,7 +41,7 @@ const NavBar = () => {
   return (
     <header>
       <nav className="nav-container">
-        <img className="my-logo" alt="my-logo" src={require("../res/11.png")} />
+        <img className="my-logo" alt="my-logo" src={bull} />
         <div className={showMenu ? "nav-menu-open" : "nav-menu"}>
           <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#home">Home</a>
@@ -62,6 +64,7 @@ const NavBar = () => {
           <p onClick={() => setShowMenu(false)} className="nav-text">
             <a href="#contact">Contact</a>
           </p>
+          {/* <ThemeToggle /> */}
         </div>
         <img
           onClick={() => {

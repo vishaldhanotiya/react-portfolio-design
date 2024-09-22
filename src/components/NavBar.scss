@@ -11,7 +11,7 @@
     display: flex;
     z-index: 1;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--bg-primary);
     justify-content: space-between;
     position: fixed;
   }
@@ -29,9 +29,8 @@
     position: absolute;
   }
   .my-logo {
-    width: 10rem;
-    height: 2.5rem;
-    margin-left: 1rem;
+    width: 6rem;
+    height: 2.8rem;
     margin-top: 0.5rem;
   }
 
@@ -46,7 +45,7 @@
     padding: 1rem 1rem 0rem 1rem;
     text-align: center;
     font-weight: 600;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     :hover {
       color: var(--red);
@@ -65,7 +64,7 @@
     display: flex;
     z-index: 1;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--bg-primary);
     justify-content: space-between;
     position: fixed;
   }
@@ -84,8 +83,8 @@
   }
   .my-logo {
     width: 12rem;
-    height: 3rem;
-    margin-left: 2rem;
+    height: 3.5rem;
+
     margin-top: 0.5rem;
   }
   .menu-logo {
@@ -99,7 +98,7 @@
     padding: 1rem 1rem 0rem 1rem;
     text-align: center;
     font-weight: 600;
-    color: var(--white);
+    color: var(--text-primary);
     font-size: 1rem;
     :hover {
       color: var(--red);
@@ -117,7 +116,7 @@
     display: flex;
     z-index: 1;
     width: 100vw;
-    background-color: #000;
+    background-color: var(--bg-primary);
     justify-content: space-between;
     position: fixed;
   }
@@ -132,9 +131,8 @@
     height: 100vh;
   }
   .my-logo {
-    width: 12.5rem;
-    height: 3.2rem;
-    margin-left: 3rem;
+    width: 10rem;
+    height: 3.5rem;
     margin-top: 0.8rem;
   }
   .menu-logo {
@@ -148,8 +146,8 @@
     padding: 1rem 1rem 0rem 1rem;
     text-align: center;
     font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     :hover {
       color: var(--red);
     }
@@ -170,7 +168,7 @@
     width: 100vw;
     justify-content: space-between;
     position: fixed;
-    background-color: #000;
+    background-color: var(--bg-primary);
   }
   .nav-menu {
     display: flex;
@@ -185,9 +183,8 @@
     height: 100vh;
   }
   .my-logo {
-    width: 13rem;
-    height: 3.5rem;
-    margin-left: 3rem;
+    width: 10rem;
+    height: 4rem;
     margin-top: 0.5rem;
   }
 
@@ -202,8 +199,8 @@
     padding: 1rem 1rem 0rem 1rem;
     text-align: center;
     font-weight: 600;
-    color: var(--white);
-    font-size: 1rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     :hover {
       color: var(--red);
     }
