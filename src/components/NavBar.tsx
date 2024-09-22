@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../components/NavBar.scss";
-import ThemeToggle from "./ThemeToggle.tsx";
 import bull from "../res/bull.svg";
 
 const NavBar = () => {
