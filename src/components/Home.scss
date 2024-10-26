@@ -1,8 +1,8 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --red: #{#ff004f};
-  --black: #{#000000};
+  --red: #{$red};
+  --black: #{$black};
 }
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -17,7 +17,7 @@
   }
 
   .my-photo {
-    height: 20rem;
+    height: 16rem;
   }
 
   .name-container {
@@ -27,14 +27,14 @@
   }
   .title {
     color: var(--text-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     span {
       color: var(--red);
     }
   }
 
   .description {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-self: start;
     color: var(--red);
   }

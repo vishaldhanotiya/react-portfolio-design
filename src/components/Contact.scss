@@ -1,8 +1,8 @@
 @import "../res/theme/variable";
 :root {
   --white: #{$white};
-  --red: #{#ff004f};
-  --black: #{#000000};
+  --red: #{$red};
+  --black: #{$black};
 }
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */

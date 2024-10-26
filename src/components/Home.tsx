@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "../components/Home.scss";
 import Type from "./Type.tsx";
 import { ThemeContext } from "./ThemeProvider.tsx";
-import facebook from "../res/facebook.svg";
+import facebook from "../res/facebook.png";
 
 const Home = () => {
   const { darkTheme } = useContext(ThemeContext);
